@@ -5,55 +5,29 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+**Thời gian thực tập (tuần 8):** 27/04/2026 – 02/05/2026
 
-### Mục tiêu tuần 8:
+### Mục tiêu tuần 8 (tuần kết thúc)
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện tài liệu, chuẩn bị demo và hồ sơ báo cáo thực tập.
+* Tổng kết bài học và bàn giao repo / quyền truy cập cho nhóm.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kế hoạch công việc theo ngày
 
+| Thứ | Ngày | Nội dung công việc | Tài liệu |
+| --- | --- | --- | --- |
+| 2 | 27/04/2026 | Đóng phạm vi demo; chỉnh README, sơ đồ kiến trúc, checklist triển khai | Repo |
+| 3 | 28/04/2026 | Diễn tập demo (luồng thuận + tình huống lỗi); nhận phản hồi mentor | Mentor |
+| 4 | 29/04/2026 | Xử lý chỉnh sửa cuối; kiểm tra alarm trên staging | CloudWatch |
+| 5 | 30/04/2026 | Soạn các mục **báo cáo thực tập** (worklog, kết quả, rút kinh nghiệm) | Mẫu báo cáo |
+| 6 | 01/05/2026 | Chia sẻ kiến thức với nhóm; gắn tag / nhánh lưu trữ | Nhóm |
+| 7 | 02/05/2026 | Dọn dẹp cuối: ghi chú xoay credential, checklist xóa tài nguyên, xác nhận hoàn tất | Checklist bảo mật |
 
-### Kết quả đạt được tuần 8:
+### Kết quả đạt được trong tuần
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Bản build demo ổn định kèm tài liệu vận hành rõ ràng.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Đã tích hợp góp ý mentor vào báo cáo và backlog tiếp theo của nhóm.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn tất hồ sơ báo cáo và **bàn giao** theo checklist an toàn.

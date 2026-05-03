@@ -1,192 +1,554 @@
-<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Deploy backend | Internship Report</title><link rel=stylesheet href=/FCAJ_Portfolio/css/output.min.281762ddf2677a0ca553aa01c3ae8da78810c82a51f048662cd446c855305432.css integrity="sha256-KBdi3fJnegylU6oBw66Np4gQyCpR8EhmLNRGyFUwVDI=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css crossorigin=anonymous referrerpolicy=no-referrer><script src=https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js></script><script src=/FCAJ_Portfolio/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body class="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100"><div class="flex min-h-screen flex-col md:flex-row"><aside class="w-full shrink-0 border-b border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-900 md:w-72 md:border-b-0 md:border-r md:sticky md:top-0 md:h-screen md:overflow-y-auto" aria-label=Sidebar><style>.sidebar-disclosure>summary .sidebar-disclosure-chevron i{transition:transform .15s ease}.sidebar-disclosure[open]>summary .sidebar-disclosure-chevron i{transform:rotate(90deg)}</style><nav class="flex flex-col gap-4" aria-label="Report navigation"><div class="flex flex-col gap-6"><a href=/FCAJ_Portfolio/ class="flex justify-center items-center"><img src=/FCAJ_Portfolio/images/FCJ-logo.png alt="Internship Report" width=280 height=64 class="h-10 w-auto max-w-full object-contain object-left sm:h-12">
-</a><input type=search id=sidebar-search-input name=sidebar-search autocomplete=off placeholder=Search… class="block w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500 dark:focus:border-blue-500 dark:focus:ring-blue-500"><div><a href=/FCAJ_Portfolio/ class="mb-3 block rounded px-2 py-1.5 text-sm font-semibold text-gray-900 no-underline hover:bg-gray-200 hover:text-blue-600 dark:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-blue-400">Internship Report</a><p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Contents</p><ul id=sidebar-contents-tree class="list-none space-y-0 p-0"><li class=my-0.5><details class="sidebar-disclosure group"><summary class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"><a href=/FCAJ_Portfolio/1-worklog/ class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100" onclick=event.stopPropagation()><b>1. </b>Worklog</a>
-<span class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400" aria-hidden=true><i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden=true></i></span></summary><ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.1-week1/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.1. </b>Week 1 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.2-week2/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.2. </b>Week 2 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.3-week3/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.3. </b>Week 3 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.4-week4/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.4. </b>Week 4 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.5-week5/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.5. </b>Week 5 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.6-week6/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.6. </b>Week 6 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.7-week7/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.7. </b>Week 7 Worklog</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/1-worklog/1.8-week8/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>1.8. </b>Week 8 Worklog</a></li></ul></details></li><li class=my-0.5><a href=/FCAJ_Portfolio/2-proposal/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>2. </b>Proposal</a></li><li class=my-0.5><details class="sidebar-disclosure group"><summary class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"><a href=/FCAJ_Portfolio/3-eventparticipated/ class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100" onclick=event.stopPropagation()><b>3. </b>EventParticipated</a>
-<span class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400" aria-hidden=true><i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden=true></i></span></summary><ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class=my-0.5><a href=/FCAJ_Portfolio/3-eventparticipated/3.1-event1/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>3.1. </b>Event 1</a></li></ul></details></li><li class="my-0.5 font-medium"><details class="sidebar-disclosure group" open><summary class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"><a href=/FCAJ_Portfolio/4-workshop/ class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100" onclick=event.stopPropagation()><b>4. </b>Workshop</a>
-<span class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400" aria-hidden=true><i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden=true></i></span></summary><ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.1-system-overview-architecture/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.1. </b>System overview and architecture</a></li><li class=my-0.5><details class="sidebar-disclosure group"><summary class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"><a href=/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/ class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100" onclick=event.stopPropagation()><b>4.2. </b>AWS infrastructure and security foundation</a>
-<span class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400" aria-hidden=true><i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden=true></i></span></summary><ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.1-vpc-network/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.2.1 </b>VPC and networking</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.2-client-facing/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.2.2 </b>Frontend Hosting and user authentication</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.3-backend-platform/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.2.3 </b>Backend and runtime platform</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.4-database/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.2.4 </b>Database</a></li></ul></details></li><li class="my-0.5 font-medium"><details class="sidebar-disclosure group" open><summary class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"><a href=/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/ class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100" onclick=event.stopPropagation()><b>4.3. </b>Terraform deployment (by layer)</a>
-<span class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400" aria-hidden=true><i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden=true></i></span></summary><ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.1-run-infrastructure-terraform/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.3.1 </b>Run infrastructure with Terraform</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.2-frontend-hosting/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.3.2 </b>Frontend hosting</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.3-backend/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100"><b>4.3.3 </b>Deploy backend</a></li></ul></details></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.5-cost-risk-expansion-roadmap/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.5. </b>Cost, risk, and expansion roadmap</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/4-workshop/4.6-legacy-cleanup/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>4.6. </b>Clean up</a></li></ul></details></li><li class=my-0.5><a href=/FCAJ_Portfolio/5-self-evaluation/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>5. </b>Self-evaluation</a></li><li class=my-0.5><a href=/FCAJ_Portfolio/6-feedback/ class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"><b>6. </b>Feedback</a></li></ul></div></div><div><p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Shortcuts</p><ul class="list-none space-y-1 p-0"><li><a href=https://www.facebook.com/groups/awsstudygroupfcj/ class="block rounded px-2 py-1.5 text-sm text-blue-700 hover:bg-gray-200 dark:text-blue-400 dark:hover:bg-gray-700"><i class='fab fa-facebook'></i> AWS Study Group</a></li></ul></div><div class="border-t flex flex-col gap-4 border-gray-200 pt-4 dark:border-gray-600"><label for=lang-select class="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400"><i class="fas fa-language" aria-hidden=true></i>
-Language
-</label><select id=lang-select class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" onchange="this.value&&(location.href=this.value)"><option value=/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.3-backend/ selected>English</option><option value=/FCAJ_Portfolio/vi/4-workshop/4.3-deployment-operations-monitoring/4.3.3-backend/>Tiếng Việt</option></select></div></nav><script>(function(){var s,e=document.getElementById("sidebar-contents-tree"),t=document.getElementById("sidebar-search-input");if(!e||!t)return;function o(e){var t,n=e.querySelector(":scope > a");return n?(n.textContent||"").trim():(t=e.querySelector(":scope > details > summary > a"),t?(t.textContent||"").trim():"")}function i(e){var t,n=e.querySelector(":scope > details");return n?(t=n.querySelector(":scope > ul"),t?Array.prototype.filter.call(t.children,function(e){return e.tagName==="LI"}):[]):[]}function n(e,t){var s,r,c=t&&o(e).toLowerCase().indexOf(t)!==-1,a=!1;return i(e).forEach(function(e){n(e,t)&&(a=!0)}),s=!t||c||a,e.style.display=s?"":"none",r=e.querySelector(":scope > details"),r&&t&&s&&a&&(r.open=!0),s}function a(){var s=(t.value||"").trim().toLowerCase(),o=Array.prototype.filter.call(e.children,function(e){return e.tagName==="LI"});if(!s){e.querySelectorAll("li").forEach(function(e){e.style.display=""});return}o.forEach(function(e){n(e,s)})}t.addEventListener("input",function(){clearTimeout(s),s=setTimeout(a,120)})})()</script></aside><div class="flex min-h-screen min-w-0 flex-1 flex-col"><main class="flex-1 bg-white px-4 py-6 md:px-8 md:py-8 text-gray-900 dark:bg-white dark:text-gray-900"><article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2"><h1>Deploy backend</h1><h2 id=433-deploy-backend>4.3.3 Deploy backend</h2><p>The backend runtime on AWS is <strong>ECS Fargate</strong> pulling an image from <strong>ECR</strong>. In SpendWiseApp/infrastructure/environments/dev/main.tf this maps to <strong>module &ldquo;ecr&rdquo;</strong> and <strong>module &ldquo;ecs&rdquo;</strong>. <strong>module &ldquo;alb&rdquo;</strong> must exist before the service can register healthy targets; it is declared <strong>before</strong> <strong>module &ldquo;ecs&rdquo;</strong> in the same <strong>main.tf</strong>. For listener and target group details, open <strong>modules/alb</strong> in your clone.</p><h3 id=code--ecr-repository-modulesecrmaintf>Code — ECR repository (modules/ecr/main.tf)</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-terraform data-lang=terraform><span style=display:flex><span><span style=color:#75715e># SpendWiseApp/infrastructure/modules/ecr/main.tf
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>resource</span> <span style=color:#e6db74>&#34;aws_ecr_repository&#34;</span> <span style=color:#e6db74>&#34;backend&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>                 <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>local</span>.<span style=color:#a6e22e>name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>-backend&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>image_tag_mutability</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;MUTABLE&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>force_delete</span>         <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>image_scanning_configuration</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>scan_on_push</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h3 id=code--locals-for-ecs-env--ecs-module-environmentsdevmaintf>Code — locals for ECS env + ECS module (environments/dev/main.tf)</h3><p>ecs_backend_environment injects DATABASE_URL when RDS is on, merges extra vars from terraform.tfvars, and appends Cognito identifiers from the Cognito module output.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-terraform data-lang=terraform><span style=display:flex><span><span style=color:#75715e># SpendWiseApp/infrastructure/environments/dev/main.tf (excerpt)
-</span></span></span><span style=display:flex><span><span style=color:#a6e22e>locals</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>ecs_backend_environment</span> <span style=color:#f92672>=</span> concat(
-</span></span><span style=display:flex><span>    var.<span style=color:#a6e22e>create_rds</span> <span style=color:#f92672>&amp;&amp;</span> module.<span style=color:#a6e22e>rds</span>.<span style=color:#a6e22e>db_instance_endpoint</span> <span style=color:#f92672>!=</span> <span style=color:#a6e22e>null</span> <span style=color:#f92672>?</span> [
-</span></span><span style=display:flex><span>      {
-</span></span><span style=display:flex><span>        <span style=color:#a6e22e>name</span>  <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;DATABASE_URL&#34;</span>
-</span></span><span style=display:flex><span>        <span style=color:#a6e22e>value</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;postgresql://</span><span style=color:#e6db74>${</span>var.<span style=color:#a6e22e>db_username</span><span style=color:#e6db74>}</span><span style=color:#e6db74>:</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>local</span>.<span style=color:#a6e22e>db_password_effective</span><span style=color:#e6db74>}</span><span style=color:#e6db74>@</span><span style=color:#e6db74>${</span>module.<span style=color:#a6e22e>rds</span>.<span style=color:#a6e22e>db_instance_endpoint</span><span style=color:#e6db74>}</span><span style=color:#e6db74>/</span><span style=color:#e6db74>${</span>var.<span style=color:#a6e22e>db_name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>?sslmode=no-verify&amp;schema=public&#34;</span>
-</span></span><span style=display:flex><span>      }
-</span></span><span style=display:flex><span>    ] <span style=color:#f92672>:</span> [],
-</span></span><span style=display:flex><span>    var.<span style=color:#a6e22e>ecs_backend_environment</span>,
-</span></span><span style=display:flex><span>    [
-</span></span><span style=display:flex><span>      {<span style=color:#a6e22e> name</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;COGNITO_REGION&#34;</span>,<span style=color:#a6e22e> value</span> <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>aws_region</span> },
-</span></span><span style=display:flex><span>      {<span style=color:#a6e22e> name</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;COGNITO_USER_POOL_ID&#34;</span>,<span style=color:#a6e22e> value</span> <span style=color:#f92672>=</span> module.<span style=color:#a6e22e>cognito</span>.<span style=color:#a6e22e>user_pool_id</span> },
-</span></span><span style=display:flex><span>      {<span style=color:#a6e22e> name</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;COGNITO_CLIENT_ID&#34;</span>,<span style=color:#a6e22e> value</span> <span style=color:#f92672>=</span> module.<span style=color:#a6e22e>cognito</span>.<span style=color:#a6e22e>user_pool_client_id</span> },
-</span></span><span style=display:flex><span>    ]
-</span></span><span style=display:flex><span>  )
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>module</span> <span style=color:#e6db74>&#34;ecr&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>source</span>       <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;../../modules/ecr&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>project_name</span> <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>project_name</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>environment</span>  <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>environment</span>
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>module</span> <span style=color:#e6db74>&#34;ecs&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>source</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;../../modules/ecs&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>depends_on</span> <span style=color:#f92672>=</span> [module.<span style=color:#a6e22e>alb</span>]
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>private_subnet_ids</span>               <span style=color:#f92672>=</span> module.<span style=color:#a6e22e>vpc</span>.<span style=color:#a6e22e>private_app_subnet_ids</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>ecs_tasks_security_group_id</span>      <span style=color:#f92672>=</span> module.<span style=color:#a6e22e>security_groups</span>.<span style=color:#a6e22e>ecs_tasks_security_group_id</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>target_group_arn</span>                 <span style=color:#f92672>=</span> module.<span style=color:#a6e22e>alb</span>.<span style=color:#a6e22e>target_group_arn</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>container_image</span>                  <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>module.<span style=color:#a6e22e>ecr</span>.<span style=color:#a6e22e>repository_url</span><span style=color:#e6db74>}</span><span style=color:#e6db74>:</span><span style=color:#e6db74>${</span>var.<span style=color:#a6e22e>ecs_backend_image_tag</span><span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>container_port</span>                   <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>app_container_port</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>cloudwatch_log_group_name</span>        <span style=color:#f92672>=</span> module.<span style=color:#a6e22e>monitoring</span>.<span style=color:#a6e22e>ecs_log_group_name</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>container_environment</span>            <span style=color:#f92672>=</span> <span style=color:#a6e22e>local</span>.<span style=color:#a6e22e>ecs_backend_environment</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>desired_count</span>                    <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_desired_count</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>task_cpu</span>                         <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_task_cpu</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>task_memory</span>                      <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_task_memory</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>assign_public_ip</span>                 <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_assign_public_ip</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>autoscaling_min_capacity</span>         <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_autoscaling_min_capacity</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>autoscaling_max_capacity</span>         <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_autoscaling_max_capacity</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>alb_request_count_resource_label</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>local</span>.<span style=color:#a6e22e>ecs_alb_request_count_resource_label</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>alb_request_count_target_value</span>   <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>ecs_alb_request_count_target_value</span>
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h3 id=code--fargate-service--autoscaling-modulesecsmaintf>Code — Fargate service + autoscaling (modules/ecs/main.tf)</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-terraform data-lang=terraform><span style=display:flex><span><span style=color:#75715e># SpendWiseApp/infrastructure/modules/ecs/main.tf (excerpt)
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>resource</span> <span style=color:#e6db74>&#34;aws_ecs_service&#34;</span> <span style=color:#e6db74>&#34;backend&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>            <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>local</span>.<span style=color:#a6e22e>name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>-backend&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>cluster</span>         <span style=color:#f92672>=</span> <span style=color:#a6e22e>aws_ecs_cluster</span>.<span style=color:#a6e22e>this</span>.<span style=color:#a6e22e>id</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>task_definition</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>aws_ecs_task_definition</span>.<span style=color:#a6e22e>backend</span>.<span style=color:#a6e22e>arn</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>desired_count</span>   <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>desired_count</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>launch_type</span>     <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;FARGATE&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>network_configuration</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>subnets</span>          <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>private_subnet_ids</span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>security_groups</span>  <span style=color:#f92672>=</span> [var.<span style=color:#a6e22e>ecs_tasks_security_group_id</span>]
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>assign_public_ip</span> <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>assign_public_ip</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>load_balancer</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>target_group_arn</span> <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>target_group_arn</span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>container_name</span>   <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;backend&#34;</span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>container_port</span>   <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>container_port</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>resource</span> <span style=color:#e6db74>&#34;aws_appautoscaling_policy&#34;</span> <span style=color:#e6db74>&#34;backend_alb_requests&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>               <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>local</span>.<span style=color:#a6e22e>name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>-ecs-alb-requests&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>policy_type</span>        <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;TargetTrackingScaling&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>resource_id</span>        <span style=color:#f92672>=</span> <span style=color:#a6e22e>aws_appautoscaling_target</span>.<span style=color:#a6e22e>backend</span>.<span style=color:#a6e22e>resource_id</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>scalable_dimension</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>aws_appautoscaling_target</span>.<span style=color:#a6e22e>backend</span>.<span style=color:#a6e22e>scalable_dimension</span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>service_namespace</span>  <span style=color:#f92672>=</span> <span style=color:#a6e22e>aws_appautoscaling_target</span>.<span style=color:#a6e22e>backend</span>.<span style=color:#a6e22e>service_namespace</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>target_tracking_scaling_policy_configuration</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>predefined_metric_specification</span> {
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>predefined_metric_type</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;ALBRequestCountPerTarget&#34;</span>
-</span></span><span style=display:flex><span>      <span style=color:#a6e22e>resource_label</span>         <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>alb_request_count_resource_label</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>target_value</span>       <span style=color:#f92672>=</span> var.<span style=color:#a6e22e>alb_request_count_target_value</span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>scale_in_cooldown</span>  <span style=color:#f92672>=</span> <span style=color:#ae81ff>300</span>
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>scale_out_cooldown</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>60</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h3 id=modulesecr--what-it-creates-and-why>modules/ecr — what it creates and why</h3><table><thead><tr><th>Resource</th><th>Role</th></tr></thead><tbody><tr><td><strong>aws_ecr_repository (…-backend)</strong></td><td>Private container registry for the NestJS image. <strong>image_scanning_configuration</strong> enables scan-on-push for supply-chain visibility. force_delete = true helps tear down dev stacks cleanly.</td></tr></tbody></table><p>After Terraform creates the repo, your pipeline or laptop runs docker build / docker push to tag (e.g. latest or a commit SHA) referenced by ecs_backend_image_tag.</p><h3 id=modulesecs--what-it-creates-and-why>modules/ecs — what it creates and why</h3><table><thead><tr><th>Resource</th><th>Role</th></tr></thead><tbody><tr><td><strong>aws_ecs_cluster</strong></td><td>Logical cluster name; <strong>Container Insights</strong> enabled for metrics.</td></tr><tr><td><strong>aws_ecs_task_definition (Fargate)</strong></td><td>Declares CPU/memory, <strong>execution role</strong> (pull image, write logs), <strong>task role</strong> (runtime AWS API access), container port, and <strong>awslogs</strong> driver pointing at the log group from module.monitoring.</td></tr><tr><td><strong>aws_ecs_service</strong></td><td>Runs tasks in <strong>private_app subnets</strong>, attaches the <strong>ECS tasks security group</strong>, optional assign_public_ip (default false — use NAT/endpoints for egress). Registers with the <strong>ALB target group</strong> for HTTP traffic.</td></tr><tr><td><strong>Application Auto Scaling</strong></td><td><strong>Target tracking</strong> on <strong>ALBRequestCountPerTarget</strong> so desired task count follows load (ecs_alb_request_count_target_value in variables).</td></tr></tbody></table><p>Environment variables injected in main.tf locals include <strong>DATABASE_URL</strong> when RDS exists, plus <strong>COGNITO_</strong>* from module.cognito so the API can validate JWTs without hard-coding pool IDs in Terraform files.</p><p><strong>Note:</strong> module &ldquo;ecs&rdquo; has depends_on = [module.alb] so listeners exist before service creation.</p><h3 id=after-terraform-apply--push-image-and-roll-ecs>After terraform apply — push image and roll ECS</h3><p>After <strong>terraform apply</strong>, ECR, ECS, the ALB, and the task definition already exist; the task definition points at the image tag in <strong>ecs_backend_image_tag</strong> (<strong>terraform.tfvars</strong>). For each backend code change, run <strong>two steps</strong>:</p><ol><li><strong>Docker push</strong> — Build the NestJS image from the repo Dockerfile, <strong>tag</strong> it to match <strong>ecs_backend_image_tag</strong>, log in to ECR, and <strong>docker push</strong> to <strong>ecr_repository_url</strong> (Terraform output).</li><li><strong>Roll ECS</strong> — <strong>aws ecs update-service … &ndash;force-new-deployment</strong> so new tasks pull the pushed image; wait until the service is <strong>stable</strong> and tasks are healthy behind the ALB.</li></ol><p><strong>Step 1 — ECR login, build, push</strong> (example: shell in the parent directory of <strong>SpendWiseApp</strong>; if your cwd is inside SpendWiseApp, adjust <strong>TF_DIR</strong> and <strong>docker build</strong> paths):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>export TF_DIR<span style=color:#f92672>=</span>SpendWiseApp/infrastructure/environments/dev
-</span></span><span style=display:flex><span>export AWS_REGION<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>terraform -chdir<span style=color:#f92672>=</span>$TF_DIR output -raw aws_region<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>export ECR_REPO<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>terraform -chdir<span style=color:#f92672>=</span>$TF_DIR output -raw ecr_repository_url<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>export ECR_REGISTRY<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>ECR_REPO%%/*<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>export IMAGE_TAG<span style=color:#f92672>=</span>latest   <span style=color:#75715e># must match ecs_backend_image_tag in Terraform</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>aws ecr get-login-password --region <span style=color:#e6db74>&#34;</span>$AWS_REGION<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  | docker login --username AWS --password-stdin <span style=color:#e6db74>&#34;</span>$ECR_REGISTRY<span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>docker build -f SpendWiseApp/backend/Dockerfile -t spendwise-backend:<span style=color:#e6db74>&#34;</span>$IMAGE_TAG<span style=color:#e6db74>&#34;</span> SpendWiseApp/backend
-</span></span><span style=display:flex><span>docker tag spendwise-backend:<span style=color:#e6db74>&#34;</span>$IMAGE_TAG<span style=color:#e6db74>&#34;</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>ECR_REPO<span style=color:#e6db74>}</span><span style=color:#e6db74>:</span><span style=color:#e6db74>${</span>IMAGE_TAG<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>docker push <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>ECR_REPO<span style=color:#e6db74>}</span><span style=color:#e6db74>:</span><span style=color:#e6db74>${</span>IMAGE_TAG<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span></code></pre></div><p><strong>Step 2 — ECS new deployment</strong> (after a successful <strong>docker push</strong>):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>export ECS_CLUSTER<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>terraform -chdir<span style=color:#f92672>=</span>$TF_DIR output -raw ecs_cluster_name<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>export ECS_SERVICE<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>terraform -chdir<span style=color:#f92672>=</span>$TF_DIR output -raw ecs_service_name<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>aws ecs update-service <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --region <span style=color:#e6db74>&#34;</span>$AWS_REGION<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --cluster <span style=color:#e6db74>&#34;</span>$ECS_CLUSTER<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --service <span style=color:#e6db74>&#34;</span>$ECS_SERVICE<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --force-new-deployment
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>aws ecs wait services-stable <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --region <span style=color:#e6db74>&#34;</span>$AWS_REGION<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --cluster <span style=color:#e6db74>&#34;</span>$ECS_CLUSTER<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --services <span style=color:#e6db74>&#34;</span>$ECS_SERVICE<span style=color:#e6db74>&#34;</span>
-</span></span></code></pre></div><h3 id=database-migrations-prisma>Database migrations (Prisma)</h3><p>After the backend <strong>ECS service</strong> is <strong>running stably</strong>, run the <strong>bash</strong> block below to apply <strong>migrations</strong> (Prisma). Use the <strong>SpendWiseApp repo root</strong> (with <strong>infrastructure/environments/dev</strong>); if your cwd is the parent directory, <strong>cd SpendWiseApp</strong> first.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>export TF_DIR<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;infrastructure/environments/dev&#34;</span>
-</span></span><span style=display:flex><span>export TFVARS<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$TF_DIR<span style=color:#e6db74>/terraform.tfvars&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>REGION<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>
-</span></span><span style=display:flex><span>  grep -E <span style=color:#e6db74>&#39;^[[:space:]]*aws_region[[:space:]]*=&#39;</span> <span style=color:#e6db74>&#34;</span>$TFVARS<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    | head -1 <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    | sed -E <span style=color:#e6db74>&#39;s/.*&#34;([^&#34;]+)&#34;.*/\1/&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>)</span>
-</span></span><span style=display:flex><span>ASSIGN_PUBLIC<span style=color:#f92672>=</span>DISABLED
-</span></span><span style=display:flex><span>grep -E <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  <span style=color:#e6db74>&#39;^[[:space:]]*ecs_assign_public_ip[[:space:]]*=[[:space:]]*true&#39;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  <span style=color:#e6db74>&#34;</span>$TFVARS<span style=color:#e6db74>&#34;</span> &gt;/dev/null 2&gt;&amp;<span style=color:#ae81ff>1</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  <span style=color:#f92672>&amp;&amp;</span> ASSIGN_PUBLIC<span style=color:#f92672>=</span>ENABLED
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>export REGION ASSIGN_PUBLIC
-</span></span><span style=display:flex><span>export CLUSTER<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>
-</span></span><span style=display:flex><span>  terraform -chdir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$TF_DIR<span style=color:#e6db74>&#34;</span> output -raw ecs_cluster_name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>)</span>
-</span></span><span style=display:flex><span>export TASK_FAMILY<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>
-</span></span><span style=display:flex><span>  terraform -chdir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$TF_DIR<span style=color:#e6db74>&#34;</span> output -raw ecs_task_definition_family
-</span></span><span style=display:flex><span><span style=color:#66d9ef>)</span>
-</span></span><span style=display:flex><span>export SUBNETS<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>
-</span></span><span style=display:flex><span>  terraform -chdir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$TF_DIR<span style=color:#e6db74>&#34;</span> output -raw ecs_private_app_subnet_ids_csv
-</span></span><span style=display:flex><span><span style=color:#66d9ef>)</span>
-</span></span><span style=display:flex><span>export ECS_SG<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>
-</span></span><span style=display:flex><span>  terraform -chdir<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$TF_DIR<span style=color:#e6db74>&#34;</span> output -raw ecs_tasks_security_group_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;awsvpcConfiguration={subnets=[&#39;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>SUBNETS<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;]&#39;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;,securityGroups=[&#39;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>ECS_SG<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;]&#39;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;,assignPublicIp=&#39;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>ASSIGN_PUBLIC<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>NETCFG<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;}&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>OVERRIDES<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;{&#34;containerOverrides&#34;:[&#39;</span>
-</span></span><span style=display:flex><span>OVERRIDES<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;{&#34;name&#34;:&#34;backend&#34;,&#34;command&#34;:[&#34;npx&#34;,&#34;prisma&#34;,&#34;migrate&#34;,&#34;deploy&#34;]}&#39;</span>
-</span></span><span style=display:flex><span>OVERRIDES<span style=color:#f92672>+=</span><span style=color:#e6db74>&#39;]}&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>export TASK_ARN<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>
-</span></span><span style=display:flex><span>  aws ecs run-task <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --region <span style=color:#e6db74>&#34;</span>$REGION<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --cluster <span style=color:#e6db74>&#34;</span>$CLUSTER<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --launch-type FARGATE <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --task-definition <span style=color:#e6db74>&#34;</span>$TASK_FAMILY<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --network-configuration <span style=color:#e6db74>&#34;</span>$NETCFG<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --overrides <span style=color:#e6db74>&#34;</span>$OVERRIDES<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --query <span style=color:#e6db74>&#39;tasks[0].taskArn&#39;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>    --output text
-</span></span><span style=display:flex><span><span style=color:#66d9ef>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>aws ecs wait tasks-stopped <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --region <span style=color:#e6db74>&#34;</span>$REGION<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --cluster <span style=color:#e6db74>&#34;</span>$CLUSTER<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --tasks <span style=color:#e6db74>&#34;</span>$TASK_ARN<span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>aws ecs describe-tasks <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --region <span style=color:#e6db74>&#34;</span>$REGION<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --cluster <span style=color:#e6db74>&#34;</span>$CLUSTER<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --tasks <span style=color:#e6db74>&#34;</span>$TASK_ARN<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --query <span style=color:#e6db74>&#39;tasks[0].containers[0].exitCode&#39;</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span>  --output text
-</span></span></code></pre></div><p><strong>describe-tasks</strong> prints <strong>exitCode</strong>: <strong>0</strong> means success; non-zero means failure — check ECS logs (CloudWatch <strong>ecs_log_group</strong> output). <strong>prisma migrate deploy</strong> applies only files already in <strong>prisma/migrations</strong>.</p><p>Design reference: <a href=../4.2-aws-infrastructure-security/4.2.3-backend-platform/>4.2.3 Backend and runtime platform</a>.</p></article></main></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Deploy backend | Internship Report</title>
+
+      <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.min.281762ddf2677a0ca553aa01c3ae8da78810c82a51f048662cd446c855305432.css" integrity="sha256-KBdi3fJnegylU6oBw66Np4gQyCpR8EhmLNRGyFUwVDI=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+      <script src="/FCAJ_Portfolio/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+  <div class="flex min-h-screen flex-col md:flex-row">
+    <aside
+      class="w-full shrink-0 border-b border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-900 md:w-72 md:border-b-0 md:border-r md:sticky md:top-0 md:h-screen md:overflow-y-auto"
+      aria-label="Sidebar"
+    >
+      <style>
+  .sidebar-disclosure > summary .sidebar-disclosure-chevron i {
+    transition: transform 0.15s ease;
+  }
+  .sidebar-disclosure[open] > summary .sidebar-disclosure-chevron i {
+    transform: rotate(90deg);
+  }
+</style>
+<nav class="flex flex-col gap-4" aria-label="Report navigation">
+  <div class="flex flex-col gap-6">
+    <a href="/FCAJ_Portfolio/" class="flex justify-center items-center">
+      <img
+        src="/FCAJ_Portfolio/images/FCJ-logo.png"
+        alt="Internship Report"
+        width="280"
+        height="64"
+        class="h-10 w-auto max-w-full object-contain object-left sm:h-12"
+      />
+    </a>
+
+    
+    <input
+      type="search"
+      id="sidebar-search-input"
+      name="sidebar-search"
+      autocomplete="off"
+      placeholder="Search…"
+      class="block w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+    />
+
+    <div>
+      
+      <a
+        href="/FCAJ_Portfolio/"
+        class="mb-3 block rounded px-2 py-1.5 text-sm font-semibold text-gray-900 no-underline hover:bg-gray-200 hover:text-blue-600 dark:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-blue-400"
+      >Internship Report</a>
+      <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        Contents
+      </p>
+      <ul id="sidebar-contents-tree" class="list-none space-y-0 p-0"><li class="my-0.5 "><details class="sidebar-disclosure group" >
+          <summary
+            class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            <a
+              href="/FCAJ_Portfolio/1-worklog/"
+              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+              onclick="event.stopPropagation()"
+            > <b> 1. </b> Worklog</a>
+            <span
+              class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+            >
+              <i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden="true"></i>
+            </span>
+          </summary>
+          <ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.1-week1/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.1. </b> Week 1 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.2-week2/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.2. </b> Week 2 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.3-week3/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.3. </b> Week 3 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.4-week4/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.4. </b> Week 4 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.5-week5/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.5. </b> Week 5 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.6-week6/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.6. </b> Week 6 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.7-week7/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.7. </b> Week 7 Worklog</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/1-worklog/1.8-week8/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 1.8. </b> Week 8 Worklog</a></li></ul>
+        </details></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/2-proposal/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 2. </b> Proposal</a></li><li class="my-0.5 "><details class="sidebar-disclosure group" >
+          <summary
+            class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            <a
+              href="/FCAJ_Portfolio/3-eventparticipated/"
+              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+              onclick="event.stopPropagation()"
+            > <b> 3. </b> EventParticipated</a>
+            <span
+              class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+            >
+              <i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden="true"></i>
+            </span>
+          </summary>
+          <ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/3-eventparticipated/3.1-event1/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 3.1. </b> Event 1</a></li></ul>
+        </details></li><li class="my-0.5 font-medium"><details class="sidebar-disclosure group" open>
+          <summary
+            class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            <a
+              href="/FCAJ_Portfolio/4-workshop/"
+              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+              onclick="event.stopPropagation()"
+            > <b> 4. </b> Workshop</a>
+            <span
+              class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+            >
+              <i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden="true"></i>
+            </span>
+          </summary>
+          <ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.1-system-overview-architecture/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.1. </b> System overview and architecture</a></li><li class="my-0.5 "><details class="sidebar-disclosure group" >
+          <summary
+            class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            <a
+              href="/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/"
+              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+              onclick="event.stopPropagation()"
+            > <b> 4.2. </b> AWS infrastructure and security foundation</a>
+            <span
+              class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+            >
+              <i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden="true"></i>
+            </span>
+          </summary>
+          <ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.1-vpc-network/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.2.1 </b> VPC and networking</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.2-client-facing/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.2.2 </b> Frontend Hosting and user authentication</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.3-backend-platform/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.2.3 </b> Backend and runtime platform</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.4-database/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.2.4 </b> Database</a></li></ul>
+        </details></li><li class="my-0.5 font-medium"><details class="sidebar-disclosure group" open>
+          <summary
+            class="flex list-none cursor-pointer items-center gap-1 rounded px-2 py-1.5 text-sm marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            <a
+              href="/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/"
+              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+              onclick="event.stopPropagation()"
+            > <b> 4.3. </b> Terraform deployment (by layer)</a>
+            <span
+              class="sidebar-disclosure-chevron inline-flex w-4 shrink-0 justify-center text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+            >
+              <i class="fas fa-chevron-right text-[10px] chevron-right-icon" aria-hidden="true"></i>
+            </span>
+          </summary>
+          <ul class="ms-3 mt-1 border-l border-gray-200 ps-2 dark:border-gray-600"><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.1-run-infrastructure-terraform/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.3.1 </b> Run infrastructure with Terraform</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.2-frontend-hosting/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.3.2 </b> Frontend hosting</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.3-backend/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100"
+        > <b> 4.3.3 </b> Deploy backend</a></li></ul>
+        </details></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.5-cost-risk-expansion-roadmap/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.5. </b> Cost, risk, and expansion roadmap</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/4-workshop/4.6-legacy-cleanup/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 4.6. </b> Clean up</a></li></ul>
+        </details></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/5-self-evaluation/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 5. </b> Self-evaluation</a></li><li class="my-0.5 "><a
+          href="/FCAJ_Portfolio/6-feedback/"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100"
+        > <b> 6. </b> Feedback</a></li></ul>
+    </div>
+  </div><div>
+      <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        Shortcuts
+      </p>
+      <ul class="list-none space-y-1 p-0"><li>
+            <a href="https://www.facebook.com/groups/awsstudygroupfcj/" class="block rounded px-2 py-1.5 text-sm text-blue-700 hover:bg-gray-200 dark:text-blue-400 dark:hover:bg-gray-700"><i class='fab fa-facebook'></i> AWS Study Group</a>
+          </li></ul>
+    </div><div class="border-t flex flex-col gap-4 border-gray-200 pt-4 dark:border-gray-600">
+      <label for="lang-select" class="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        <i class="fas fa-language" aria-hidden="true"></i>
+        Language
+      </label>
+      <select
+        id="lang-select"
+        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+        onchange="if (this.value) location.href=this.value"
+      ><option value="/FCAJ_Portfolio/4-workshop/4.3-deployment-operations-monitoring/4.3.3-backend/" selected>
+            English
+          </option><option value="/FCAJ_Portfolio/vi/4-workshop/4.3-deployment-operations-monitoring/4.3.3-backend/" >
+            Tiếng Việt
+          </option></select>
+    </div></nav>
+<script>
+(function () {
+  var root = document.getElementById('sidebar-contents-tree');
+  var input = document.getElementById('sidebar-search-input');
+  if (!root || !input) return;
+
+  function getLiLabel(li) {
+    var direct = li.querySelector(':scope > a');
+    if (direct) return (direct.textContent || '').trim();
+    var summaryA = li.querySelector(':scope > details > summary > a');
+    return summaryA ? (summaryA.textContent || '').trim() : '';
+  }
+
+  function immediateChildLis(li) {
+    var d = li.querySelector(':scope > details');
+    if (!d) return [];
+    var ul = d.querySelector(':scope > ul');
+    if (!ul) return [];
+    return Array.prototype.filter.call(ul.children, function (el) {
+      return el.tagName === 'LI';
+    });
+  }
+
+  function walkFilter(li, q) {
+    var selfMatch = q && getLiLabel(li).toLowerCase().indexOf(q) !== -1;
+    var childHas = false;
+    immediateChildLis(li).forEach(function (child) {
+      if (walkFilter(child, q)) childHas = true;
+    });
+    var show = !q || selfMatch || childHas;
+    li.style.display = show ? '' : 'none';
+    var details = li.querySelector(':scope > details');
+    if (details && q && show && childHas) details.open = true;
+    return show;
+  }
+
+  function applyFilter() {
+    var q = (input.value || '').trim().toLowerCase();
+    var topLis = Array.prototype.filter.call(root.children, function (el) {
+      return el.tagName === 'LI';
+    });
+    if (!q) {
+      root.querySelectorAll('li').forEach(function (li) {
+        li.style.display = '';
+      });
+      return;
+    }
+    topLis.forEach(function (li) {
+      walkFilter(li, q);
+    });
+  }
+
+  var t;
+  input.addEventListener('input', function () {
+    clearTimeout(t);
+    t = setTimeout(applyFilter, 120);
+  });
+})();
+</script>
+
+    </aside>
+    <div class="flex min-h-screen min-w-0 flex-1 flex-col">
+      <main class="flex-1 bg-white px-4 py-6 md:px-8 md:py-8 text-gray-900 dark:bg-white dark:text-gray-900">
+        
+  <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
+    <h1>Deploy backend</h1>
+    <h2 id="433-deploy-backend">4.3.3 Deploy backend</h2>
+<p>The backend runtime on AWS is <strong>ECS Fargate</strong> pulling an image from <strong>ECR</strong>. In SpendWiseApp/infrastructure/environments/dev/main.tf this maps to <strong>module &ldquo;ecr&rdquo;</strong> and <strong>module &ldquo;ecs&rdquo;</strong>. <strong>module &ldquo;alb&rdquo;</strong> must exist before the service can register healthy targets; it is declared <strong>before</strong> <strong>module &ldquo;ecs&rdquo;</strong> in the same <strong>main.tf</strong>. For listener and target group details, open <strong>modules/alb</strong> in your clone.</p>
+<h3 id="code--ecr-repository-modulesecrmaintf">Code — ECR repository (modules/ecr/main.tf)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-terraform" data-lang="terraform"><span style="display:flex;"><span><span style="color:#75715e"># SpendWiseApp/infrastructure/modules/ecr/main.tf
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;aws_ecr_repository&#34;</span> <span style="color:#e6db74">&#34;backend&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span>                 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">local</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">-backend&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">image_tag_mutability</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MUTABLE&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">force_delete</span>         <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">image_scanning_configuration</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scan_on_push</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="code--locals-for-ecs-env--ecs-module-environmentsdevmaintf">Code — locals for ECS env + ECS module (environments/dev/main.tf)</h3>
+<p>ecs_backend_environment injects DATABASE_URL when RDS is on, merges extra vars from terraform.tfvars, and appends Cognito identifiers from the Cognito module output.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-terraform" data-lang="terraform"><span style="display:flex;"><span><span style="color:#75715e"># SpendWiseApp/infrastructure/environments/dev/main.tf (excerpt)
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">locals</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ecs_backend_environment</span> <span style="color:#f92672">=</span> concat(
+</span></span><span style="display:flex;"><span>    var.<span style="color:#a6e22e">create_rds</span> <span style="color:#f92672">&amp;&amp;</span> module.<span style="color:#a6e22e">rds</span>.<span style="color:#a6e22e">db_instance_endpoint</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">null</span> <span style="color:#f92672">?</span> [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;DATABASE_URL&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;postgresql://</span><span style="color:#e6db74">${</span>var.<span style="color:#a6e22e">db_username</span><span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">local</span>.<span style="color:#a6e22e">db_password_effective</span><span style="color:#e6db74">}</span><span style="color:#e6db74">@</span><span style="color:#e6db74">${</span>module.<span style="color:#a6e22e">rds</span>.<span style="color:#a6e22e">db_instance_endpoint</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">${</span>var.<span style="color:#a6e22e">db_name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">?sslmode=no-verify&amp;schema=public&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ] <span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>    var.<span style="color:#a6e22e">ecs_backend_environment</span>,
+</span></span><span style="display:flex;"><span>    [
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e"> name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;COGNITO_REGION&#34;</span>,<span style="color:#a6e22e"> value</span> <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">aws_region</span> },
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e"> name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;COGNITO_USER_POOL_ID&#34;</span>,<span style="color:#a6e22e"> value</span> <span style="color:#f92672">=</span> module.<span style="color:#a6e22e">cognito</span>.<span style="color:#a6e22e">user_pool_id</span> },
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e"> name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;COGNITO_CLIENT_ID&#34;</span>,<span style="color:#a6e22e"> value</span> <span style="color:#f92672">=</span> module.<span style="color:#a6e22e">cognito</span>.<span style="color:#a6e22e">user_pool_client_id</span> },
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> <span style="color:#e6db74">&#34;ecr&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">source</span>       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;../../modules/ecr&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">project_name</span> <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">project_name</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">environment</span>  <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">environment</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> <span style="color:#e6db74">&#34;ecs&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;../../modules/ecs&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">depends_on</span> <span style="color:#f92672">=</span> [module.<span style="color:#a6e22e">alb</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">private_subnet_ids</span>               <span style="color:#f92672">=</span> module.<span style="color:#a6e22e">vpc</span>.<span style="color:#a6e22e">private_app_subnet_ids</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ecs_tasks_security_group_id</span>      <span style="color:#f92672">=</span> module.<span style="color:#a6e22e">security_groups</span>.<span style="color:#a6e22e">ecs_tasks_security_group_id</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">target_group_arn</span>                 <span style="color:#f92672">=</span> module.<span style="color:#a6e22e">alb</span>.<span style="color:#a6e22e">target_group_arn</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">container_image</span>                  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>module.<span style="color:#a6e22e">ecr</span>.<span style="color:#a6e22e">repository_url</span><span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>var.<span style="color:#a6e22e">ecs_backend_image_tag</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">container_port</span>                   <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">app_container_port</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cloudwatch_log_group_name</span>        <span style="color:#f92672">=</span> module.<span style="color:#a6e22e">monitoring</span>.<span style="color:#a6e22e">ecs_log_group_name</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">container_environment</span>            <span style="color:#f92672">=</span> <span style="color:#a6e22e">local</span>.<span style="color:#a6e22e">ecs_backend_environment</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">desired_count</span>                    <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_desired_count</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">task_cpu</span>                         <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_task_cpu</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">task_memory</span>                      <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_task_memory</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">assign_public_ip</span>                 <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_assign_public_ip</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">autoscaling_min_capacity</span>         <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_autoscaling_min_capacity</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">autoscaling_max_capacity</span>         <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_autoscaling_max_capacity</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">alb_request_count_resource_label</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">local</span>.<span style="color:#a6e22e">ecs_alb_request_count_resource_label</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">alb_request_count_target_value</span>   <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">ecs_alb_request_count_target_value</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="code--fargate-service--autoscaling-modulesecsmaintf">Code — Fargate service + autoscaling (modules/ecs/main.tf)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-terraform" data-lang="terraform"><span style="display:flex;"><span><span style="color:#75715e"># SpendWiseApp/infrastructure/modules/ecs/main.tf (excerpt)
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;aws_ecs_service&#34;</span> <span style="color:#e6db74">&#34;backend&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span>            <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">local</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">-backend&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">cluster</span>         <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_ecs_cluster</span>.<span style="color:#a6e22e">this</span>.<span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">task_definition</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_ecs_task_definition</span>.<span style="color:#a6e22e">backend</span>.<span style="color:#a6e22e">arn</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">desired_count</span>   <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">desired_count</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">launch_type</span>     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;FARGATE&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">network_configuration</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">subnets</span>          <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">private_subnet_ids</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">security_groups</span>  <span style="color:#f92672">=</span> [var.<span style="color:#a6e22e">ecs_tasks_security_group_id</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assign_public_ip</span> <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">assign_public_ip</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">load_balancer</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">target_group_arn</span> <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">target_group_arn</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">container_name</span>   <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;backend&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">container_port</span>   <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">container_port</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;aws_appautoscaling_policy&#34;</span> <span style="color:#e6db74">&#34;backend_alb_requests&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span>               <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">local</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">-ecs-alb-requests&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">policy_type</span>        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TargetTrackingScaling&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">resource_id</span>        <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_appautoscaling_target</span>.<span style="color:#a6e22e">backend</span>.<span style="color:#a6e22e">resource_id</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scalable_dimension</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_appautoscaling_target</span>.<span style="color:#a6e22e">backend</span>.<span style="color:#a6e22e">scalable_dimension</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">service_namespace</span>  <span style="color:#f92672">=</span> <span style="color:#a6e22e">aws_appautoscaling_target</span>.<span style="color:#a6e22e">backend</span>.<span style="color:#a6e22e">service_namespace</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">target_tracking_scaling_policy_configuration</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">predefined_metric_specification</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">predefined_metric_type</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ALBRequestCountPerTarget&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">resource_label</span>         <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">alb_request_count_resource_label</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">target_value</span>       <span style="color:#f92672">=</span> var.<span style="color:#a6e22e">alb_request_count_target_value</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scale_in_cooldown</span>  <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scale_out_cooldown</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="modulesecr--what-it-creates-and-why">modules/ecr — what it creates and why</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Resource</th>
+          <th>Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>aws_ecr_repository (…-backend)</strong></td>
+          <td>Private container registry for the NestJS image. <strong>image_scanning_configuration</strong> enables scan-on-push for supply-chain visibility. force_delete = true helps tear down dev stacks cleanly.</td>
+      </tr>
+  </tbody>
+</table>
+<p>After Terraform creates the repo, your pipeline or laptop runs docker build / docker push to tag (e.g. latest or a commit SHA) referenced by ecs_backend_image_tag.</p>
+<h3 id="modulesecs--what-it-creates-and-why">modules/ecs — what it creates and why</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Resource</th>
+          <th>Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>aws_ecs_cluster</strong></td>
+          <td>Logical cluster name; <strong>Container Insights</strong> enabled for metrics.</td>
+      </tr>
+      <tr>
+          <td><strong>aws_ecs_task_definition (Fargate)</strong></td>
+          <td>Declares CPU/memory, <strong>execution role</strong> (pull image, write logs), <strong>task role</strong> (runtime AWS API access), container port, and <strong>awslogs</strong> driver pointing at the log group from module.monitoring.</td>
+      </tr>
+      <tr>
+          <td><strong>aws_ecs_service</strong></td>
+          <td>Runs tasks in <strong>private_app subnets</strong>, attaches the <strong>ECS tasks security group</strong>, optional assign_public_ip (default false — use NAT/endpoints for egress). Registers with the <strong>ALB target group</strong> for HTTP traffic.</td>
+      </tr>
+      <tr>
+          <td><strong>Application Auto Scaling</strong></td>
+          <td><strong>Target tracking</strong> on <strong>ALBRequestCountPerTarget</strong> so desired task count follows load (ecs_alb_request_count_target_value in variables).</td>
+      </tr>
+  </tbody>
+</table>
+<p>Environment variables injected in main.tf locals include <strong>DATABASE_URL</strong> when RDS exists, plus <strong>COGNITO_</strong>* from module.cognito so the API can validate JWTs without hard-coding pool IDs in Terraform files.</p>
+<p><strong>Note:</strong> module &ldquo;ecs&rdquo; has depends_on = [module.alb] so listeners exist before service creation.</p>
+<h3 id="after-terraform-apply--push-image-and-roll-ecs">After terraform apply — push image and roll ECS</h3>
+<p>After <strong>terraform apply</strong>, ECR, ECS, the ALB, and the task definition already exist; the task definition points at the image tag in <strong>ecs_backend_image_tag</strong> (<strong>terraform.tfvars</strong>). For each backend code change, run <strong>two steps</strong>:</p>
+<ol>
+<li><strong>Docker push</strong> — Build the NestJS image from the repo Dockerfile, <strong>tag</strong> it to match <strong>ecs_backend_image_tag</strong>, log in to ECR, and <strong>docker push</strong> to <strong>ecr_repository_url</strong> (Terraform output).</li>
+<li><strong>Roll ECS</strong> — <strong>aws ecs update-service … &ndash;force-new-deployment</strong> so new tasks pull the pushed image; wait until the service is <strong>stable</strong> and tasks are healthy behind the ALB.</li>
+</ol>
+<p><strong>Step 1 — ECR login, build, push</strong> (example: shell in the parent directory of <strong>SpendWiseApp</strong>; if your cwd is inside SpendWiseApp, adjust <strong>TF_DIR</strong> and <strong>docker build</strong> paths):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export TF_DIR<span style="color:#f92672">=</span>SpendWiseApp/infrastructure/environments/dev
+</span></span><span style="display:flex;"><span>export AWS_REGION<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>terraform -chdir<span style="color:#f92672">=</span>$TF_DIR output -raw aws_region<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>export ECR_REPO<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>terraform -chdir<span style="color:#f92672">=</span>$TF_DIR output -raw ecr_repository_url<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>export ECR_REGISTRY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ECR_REPO%%/*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>export IMAGE_TAG<span style="color:#f92672">=</span>latest   <span style="color:#75715e"># must match ecs_backend_image_tag in Terraform</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ecr get-login-password --region <span style="color:#e6db74">&#34;</span>$AWS_REGION<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  | docker login --username AWS --password-stdin <span style="color:#e6db74">&#34;</span>$ECR_REGISTRY<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker build -f SpendWiseApp/backend/Dockerfile -t spendwise-backend:<span style="color:#e6db74">&#34;</span>$IMAGE_TAG<span style="color:#e6db74">&#34;</span> SpendWiseApp/backend
+</span></span><span style="display:flex;"><span>docker tag spendwise-backend:<span style="color:#e6db74">&#34;</span>$IMAGE_TAG<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ECR_REPO<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>IMAGE_TAG<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>docker push <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ECR_REPO<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>IMAGE_TAG<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p><strong>Step 2 — ECS new deployment</strong> (after a successful <strong>docker push</strong>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export ECS_CLUSTER<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>terraform -chdir<span style="color:#f92672">=</span>$TF_DIR output -raw ecs_cluster_name<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>export ECS_SERVICE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>terraform -chdir<span style="color:#f92672">=</span>$TF_DIR output -raw ecs_service_name<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ecs update-service <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --region <span style="color:#e6db74">&#34;</span>$AWS_REGION<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --cluster <span style="color:#e6db74">&#34;</span>$ECS_CLUSTER<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --service <span style="color:#e6db74">&#34;</span>$ECS_SERVICE<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --force-new-deployment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ecs wait services-stable <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --region <span style="color:#e6db74">&#34;</span>$AWS_REGION<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --cluster <span style="color:#e6db74">&#34;</span>$ECS_CLUSTER<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --services <span style="color:#e6db74">&#34;</span>$ECS_SERVICE<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h3 id="database-migrations-prisma">Database migrations (Prisma)</h3>
+<p>After the backend <strong>ECS service</strong> is <strong>running stably</strong>, run the <strong>bash</strong> block below to apply <strong>migrations</strong> (Prisma). Use the <strong>SpendWiseApp repo root</strong> (with <strong>infrastructure/environments/dev</strong>); if your cwd is the parent directory, <strong>cd SpendWiseApp</strong> first.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export TF_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;infrastructure/environments/dev&#34;</span>
+</span></span><span style="display:flex;"><span>export TFVARS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$TF_DIR<span style="color:#e6db74">/terraform.tfvars&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>REGION<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>
+</span></span><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^[[:space:]]*aws_region[[:space:]]*=&#39;</span> <span style="color:#e6db74">&#34;</span>$TFVARS<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    | head -1 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    | sed -E <span style="color:#e6db74">&#39;s/.*&#34;([^&#34;]+)&#34;.*/\1/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>ASSIGN_PUBLIC<span style="color:#f92672">=</span>DISABLED
+</span></span><span style="display:flex;"><span>grep -E <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;^[[:space:]]*ecs_assign_public_ip[[:space:]]*=[[:space:]]*true&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;</span>$TFVARS<span style="color:#e6db74">&#34;</span> &gt;/dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  <span style="color:#f92672">&amp;&amp;</span> ASSIGN_PUBLIC<span style="color:#f92672">=</span>ENABLED
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export REGION ASSIGN_PUBLIC
+</span></span><span style="display:flex;"><span>export CLUSTER<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>
+</span></span><span style="display:flex;"><span>  terraform -chdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$TF_DIR<span style="color:#e6db74">&#34;</span> output -raw ecs_cluster_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>export TASK_FAMILY<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>
+</span></span><span style="display:flex;"><span>  terraform -chdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$TF_DIR<span style="color:#e6db74">&#34;</span> output -raw ecs_task_definition_family
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>export SUBNETS<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>
+</span></span><span style="display:flex;"><span>  terraform -chdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$TF_DIR<span style="color:#e6db74">&#34;</span> output -raw ecs_private_app_subnet_ids_csv
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>export ECS_SG<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>
+</span></span><span style="display:flex;"><span>  terraform -chdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$TF_DIR<span style="color:#e6db74">&#34;</span> output -raw ecs_tasks_security_group_id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;awsvpcConfiguration={subnets=[&#39;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>SUBNETS<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;]&#39;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;,securityGroups=[&#39;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ECS_SG<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;]&#39;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;,assignPublicIp=&#39;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ASSIGN_PUBLIC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>NETCFG<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>OVERRIDES<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{&#34;containerOverrides&#34;:[&#39;</span>
+</span></span><span style="display:flex;"><span>OVERRIDES<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;{&#34;name&#34;:&#34;backend&#34;,&#34;command&#34;:[&#34;npx&#34;,&#34;prisma&#34;,&#34;migrate&#34;,&#34;deploy&#34;]}&#39;</span>
+</span></span><span style="display:flex;"><span>OVERRIDES<span style="color:#f92672">+=</span><span style="color:#e6db74">&#39;]}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export TASK_ARN<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>
+</span></span><span style="display:flex;"><span>  aws ecs run-task <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --region <span style="color:#e6db74">&#34;</span>$REGION<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --cluster <span style="color:#e6db74">&#34;</span>$CLUSTER<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --launch-type FARGATE <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --task-definition <span style="color:#e6db74">&#34;</span>$TASK_FAMILY<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --network-configuration <span style="color:#e6db74">&#34;</span>$NETCFG<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --overrides <span style="color:#e6db74">&#34;</span>$OVERRIDES<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --query <span style="color:#e6db74">&#39;tasks[0].taskArn&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --output text
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ecs wait tasks-stopped <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --region <span style="color:#e6db74">&#34;</span>$REGION<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --cluster <span style="color:#e6db74">&#34;</span>$CLUSTER<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --tasks <span style="color:#e6db74">&#34;</span>$TASK_ARN<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>aws ecs describe-tasks <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --region <span style="color:#e6db74">&#34;</span>$REGION<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --cluster <span style="color:#e6db74">&#34;</span>$CLUSTER<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --tasks <span style="color:#e6db74">&#34;</span>$TASK_ARN<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --query <span style="color:#e6db74">&#39;tasks[0].containers[0].exitCode&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --output text
+</span></span></code></pre></div><p><strong>describe-tasks</strong> prints <strong>exitCode</strong>: <strong>0</strong> means success; non-zero means failure — check ECS logs (CloudWatch <strong>ecs_log_group</strong> output). <strong>prisma migrate deploy</strong> applies only files already in <strong>prisma/migrations</strong>.</p>
+<p>Design reference: <a href="../4.2-aws-infrastructure-security/4.2.3-backend-platform/">4.2.3 Backend and runtime platform</a>.</p>
+</article>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>

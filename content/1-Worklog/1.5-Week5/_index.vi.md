@@ -5,55 +5,31 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+**Thời gian thực tập (tuần 5):** 06/04/2026 – 12/04/2026
 
-### Mục tiêu tuần 5:
+### Mục tiêu tuần 5 (theo nội dung giao tại đơn vị)
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thực hành **Workshop mạng trên AWS** (theo lab đơn vị).
+* Phân phối nội dung qua **CloudFront**.
+* Tìm hiểu **AWS CDK** (cấu trúc project, `cdk synth`, `cdk deploy`).
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kế hoạch công việc theo ngày
 
+| Thứ | Ngày | Nội dung công việc | Tài liệu |
+| --- | --- | --- | --- |
+| 2 | 06/04/2026 | Workshop: ôn VPC/subnet/routing + bài tập mạng có hướng dẫn | Tài liệu workshop / mentor |
+| 3 | 07/04/2026 | Workshop: cân bằng tải & mô hình TLS (lý thuyết + lab) | [ELB](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/introduction.html) |
+| 4 | 08/04/2026 | Lab **CloudFront**: distribution, origin **S3** hoặc **ALB**, cache policy | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
+| 5 | 09/04/2026 | Cài **AWS CDK**; `cdk init`; stack **bootstrap**; construct đầu tiên | [CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) |
+| 6 | 10/04/2026 | CDK: `synth` & deploy stack nhỏ; ghi chú tham số & teardown | [CDK Workshop](https://cdkworkshop.com/) |
 
-### Kết quả đạt được tuần 5:
+### Kết quả đạt được trong tuần
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành phần workshop **mạng** và liên hệ với kiến trúc nhóm.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cấu hình **CloudFront** với origin và hành vi cache được ghi lại.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Khởi tạo ứng dụng **CDK** và deploy stack tối thiểu lên môi trường dev.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Thống nhất quy ước đặt tên, tag, môi trường với nhóm **IaC**.

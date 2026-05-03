@@ -5,55 +5,27 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+**Thời gian thực tập (tuần 7):** 20/04/2026 – 26/04/2026
 
-### Mục tiêu tuần 7:
+### Mục tiêu tuần 7 (bổ sung theo tiến độ đồ án / mentor)
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* File `worklog.md` chưa ghi thêm mục riêng cho tuần này; mục tiêu bám milestone **SpendWise / đồ án nhóm**: củng cố **tích hợp**, nâng **quan sát vận hành**, xử lý **backlog** trước tuần bàn giao.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kế hoạch công việc theo ngày
 
+| Thứ | Ngày | Nội dung công việc | Tài liệu |
+| --- | --- | --- | --- |
+| 2 | 20/04/2026 | Rà soát luồng end-to-end (Amplify / ALB → ECS → RDS); rủi ro & giảm thiểu | Sơ đồ kiến trúc |
+| 3 | 21/04/2026 | CI/CD: log build, tag image, thăng cấp môi trường | Pipeline nhóm |
+| 4 | 22/04/2026 | Dashboard & alarm **CloudWatch**; tinh chỉnh ngưỡng | [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) |
+| 5 | 23/04/2026 | Rà chi phí **Cost Explorer** theo tag/dịch vụ; ghi nhận hạng mục chính | [Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) |
+| 6 | 24/04/2026 | Sửa lỗi / PR với nhóm; cập nhật runbook & README | Repo |
 
-### Kết quả đạt được tuần 7:
+### Kết quả đạt được trong tuần
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Giảm backlog lỗi tích hợp; tăng độ tin cậy khi deploy.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Bổ sung hoặc tinh chỉnh **giám sát** gắn với mục tiêu vận hành đã thống nhất với mentor.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Có bản tóm tắt **chi phí & rủi ro** phục vụ demo cuối kỳ.

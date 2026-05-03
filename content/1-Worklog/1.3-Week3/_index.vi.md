@@ -5,55 +5,31 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+**Thời gian thực tập (tuần 3):** 23/03/2026 – 29/03/2026
 
-### Mục tiêu tuần 3:
+### Mục tiêu tuần 3 (theo nội dung giao tại đơn vị)
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Dịch vụ lưu trữ **S3** và phân phối nội dung với **CloudFront**.
+* Dịch vụ quản trị CSDL **RDS**.
+* Tìm hiểu **Auto Scaling Group** (khả năng mở rộng và sẵn sàng).
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kế hoạch công việc theo ngày
 
+| Thứ | Ngày | Nội dung công việc | Tài liệu |
+| --- | --- | --- | --- |
+| 2 | 23/03/2026 | **S3**: bucket, object, versioning, mã hóa, bucket policy | [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) |
+| 3 | 24/03/2026 | **CloudFront**: distribution, origin (S3/ALB), behaviour, invalidate cache cơ bản | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
+| 4 | 25/03/2026 | **RDS**: engine, subnet group, parameter group; tạo DB dev nhỏ | [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) |
+| 5 | 26/03/2026 | Kết nối **RDS** từ VPC ứng dụng; backup & snapshot | [RDS backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html) |
+| 6 | 27/03/2026 | **Auto Scaling Group** + **Launch Template**: desired/min/max; health check | [Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html) |
 
-### Kết quả đạt được tuần 3:
+### Kết quả đạt được trong tuần
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thao tác **S3** ổn cho tài tĩnh và quyền truy cập theo policy.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thử nghiệm **CloudFront** phía trước origin **S3**.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Triển khai **RDS** trong private subnet với cấu hình hợp lý và ghi lại bước kết nối.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu vai trò **ASG** duy trì capacity trên nhiều AZ.

@@ -5,30 +5,32 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Set up digital collaboration channels for the 5-member team (Zalo, GitHub).
-* Explore and get familiar with core AWS services.
+**Internship period (Week 1):** 09/03/2026 – 15/03/2026
 
-### Tasks to be carried out this week:
-| Day | Tasks | Start Date | Completion Date | Reference |
-| --- | --- | --- | --- | --- |
-| 2 | - Get acquainted with FCJ members <br> - Read and note the rules/regulations at the internship unit <br> - Receive BootCamp roadmap briefing at the internship unit | 09/03/2026 | 09/03/2026 | - |
-| 3 | - Create an AWS Free Tier account <br> - Learn AWS Console and AWS CLI <br> - **Practice:** <br>&emsp;+ Create AWS account <br>&emsp;+ Install and configure AWS CLI <br>&emsp;+ Execute basic commands | 10/03/2026 | 10/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Learn AWS cost management (Billing, Cost Explorer, budgets, cost alerts) <br> - Learn AWS Support channels and plans (documentation, forums, Support Center, plan tiers) | 11/03/2026 | 11/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Manage access with **AWS Identity and Access Management (IAM)** <br> - **Practice:** <br>&emsp;+ Create IAM Groups and IAM Users <br>&emsp;+ Create IAM Roles and assign/link permissions to users | 12/03/2026 | 12/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - Learn basic AWS **Networking** (VPC, subnet, route) <br> - **Practice:** <br>&emsp;+ Create a VPC <br>&emsp;+ Configure firewall controls with **Security Group** and **Network ACLs** | 13/03/2026 | 13/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+### Week 1 objectives (assigned focus)
 
+* Get familiar with AWS and foundational services.
+* Create an AWS account.
+* Read documentation and learn cost management with **AWS Budgets**.
+* Explore technical support options with **AWS Support**.
 
-### Week 1 Outcomes:
+### Weekly plan by day
 
-* Connected with the team, understood internship rules, got the BootCamp roadmap, and set up team collaboration channels (Zalo, GitHub) aligned with Week 1 objectives.
+| Day | Date | Activities | Reference |
+| --- | --- | --- | --- |
+| Mon | 09/03/2026 | FCJ team onboarding; internship rules, safety, and roadmap briefing | — |
+| Tue | 10/03/2026 | Create **AWS** account; navigate **AWS Management Console**; install and configure **AWS CLI** (credentials, default region) | [AWS Study Group — Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+| Wed | 11/03/2026 | **Billing & Cost Management:** Cost Explorer overview; **AWS Budgets** concepts; budget vs actual; cost anomaly basics | [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
+| Thu | 12/03/2026 | **AWS Support:** documentation, forums, **Support Center**; compare **Basic / Developer / Business** plans; open a practice ticket (if allowed) | [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html) |
+| Fri | 13/03/2026 | Consolidate notes; optional: **IAM** users/groups/roles recap for least-privilege account hygiene | [AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/) |
 
-* Successfully created and configured an **AWS Free Tier account**; became familiar with **AWS Management Console** and **AWS CLI** (credential setup, region configuration, basic command execution).
+### What was achieved this week
 
-* Gained understanding of **cost management** directions (monitoring, budget alerts) and how to **contact AWS Support** / choose suitable support channels.
+* Joined the internship programme, understood unit rules, and aligned with the Week 1 roadmap from the company mentor.
 
-* Understood the **IAM** model (User, Group, Role, policy); practiced creating groups, users, roles, and assigning permissions following least-privilege principles.
+* Created and secured an **AWS** account; became comfortable with the **Console** and **CLI** for everyday tasks.
 
-* Understood the **VPC** concept and network protection layers; practiced creating a VPC and configuring **Security Group** and **Network ACLs** for proper traffic control.
+* Understood how to monitor spend (**Cost Explorer**, **Budgets**) and where to get help (**AWS Support** channels and plan trade-offs).
+
+* Documented learnings and next steps for networking and access control in the following weeks.

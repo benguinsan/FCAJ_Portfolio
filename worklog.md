@@ -22,9 +22,9 @@ Thực hành dựng máy chủ EC2 trên AWS
 
 3
 Từ ngày 23/ 03/ 2026
-đến ngày 29/ 03/ 2025
+đến ngày 29/ 03/ 2026
 Tìm hiểu và thực hành các dịch vụ AWS sau:
-Dịch vụ lưu trữ S3 và AWS Cloudfont
+Dịch vụ lưu trữ S3 và AWS CloudFront
 Dịch vụ quản trị cơ sỡ dữ liệu RDS
 Tìm hiểu về Auto Scaling Group
 
@@ -45,7 +45,7 @@ Từ ngày 06/ 04/ 2026
 đến ngày 12/ 04/ 2026
 Tìm hiểu và thực hành các dịch vụ AWS sau:
 Thực hành nội dung WorkShop về mạng trên AWS
-Phân phối nội dung qua Cloudfont
+Phân phối nội dung qua CloudFront
 Tìm hiểu về CDK trên AWS
 
 

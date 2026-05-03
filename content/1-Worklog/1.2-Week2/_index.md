@@ -5,53 +5,30 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+**Internship period (Week 2):** 16/03/2026 – 22/03/2026
 
-### Week 2 Objectives:
+### Week 2 objectives (assigned focus)
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn and practice core **AWS networking**: **VPC**, **subnets**, **route tables**, **Security Groups**.
+* Practice provisioning **EC2** instances and basic connectivity.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Weekly plan by day
 
+| Day | Date | Activities | Reference |
+| --- | --- | --- | --- |
+| Mon | 16/03/2026 | VPC fundamentals: CIDR, AZs, public vs private subnets; **Internet Gateway** | [VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) |
+| Tue | 17/03/2026 | **Security Groups** vs **NACLs**; lab: rules for HTTP/SSH | [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) |
+| Wed | 18/03/2026 | **EC2**: AMIs, instance types, key pairs, **EBS** volumes | [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) |
+| Thu | 19/03/2026 | Launch EC2 in a custom VPC; attach **Elastic IP** (where appropriate); **SSH** / **SSM Session Manager** | [Connect to Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html) |
+| Fri | 20/03/2026 | End-to-end mini lab: VPC + subnets + SG + EC2; tear-down checklist | [AWS Study Group — Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
 
-### Week 2 Achievements:
+### What was achieved this week
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Designed a simple **VPC** layout with subnets and routing aligned to security best practices.
 
-* Successfully created and configured an AWS Free Tier account.
+* Configured **Security Groups** / **NACLs** for controlled inbound/outbound traffic.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Launched and accessed **EC2** instances; practiced **EBS** attach/detach and basic troubleshooting.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Documented the lab topology for reuse in the group project and later workshops.

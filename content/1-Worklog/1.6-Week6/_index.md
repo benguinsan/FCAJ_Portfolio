@@ -5,53 +5,29 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+**Internship period (Week 6):** 13/04/2026 – 19/04/2026
 
-### Week 6 Objectives:
+### Week 6 objectives (assigned focus)
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* User authentication with **Amazon Cognito** (user pools, app clients, hosted UI concepts).
+* Contribute to group project infrastructure: **VPC** & **Security Groups** baseline.
+* Align **Cognito** with the application’s sign-in / token flow.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Weekly plan by day
 
+| Day | Date | Activities | Reference |
+| --- | --- | --- | --- |
+| Mon | 13/04/2026 | **Cognito** user pools; password/MFA policies; app client settings | [Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
+| Tue | 14/04/2026 | Hosted UI & OAuth/OIDC flows (read + diagram); test tokens in sandbox | [Hosted UI](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html) |
+| Wed | 15/04/2026 | Group project: review **VPC** diagram (subnets, IGW, NAT, endpoints) | Team design doc |
+| Thu | 16/04/2026 | Implement / refine **Security Groups** for ALB, ECS tasks, RDS in repo (`terraform`/`cdk`) | Repo + mentor review |
+| Fri | 17/04/2026 | Wire **Cognito** client IDs & callback URLs to dev environment; document secrets handling | [Cognito app integration](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html) |
 
-### Week 6 Achievements:
+### What was achieved this week
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Configured a **Cognito** user pool suitable for dev/testing and understood token lifecycles.
 
-* Successfully created and configured an AWS Free Tier account.
+* Contributed **networking** changes (VPC + **SG** rules) reviewed with the team.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Produced integration notes for frontend/backend teams on **auth** configuration.
