@@ -1,4 +1,6 @@
-baseURL = 'http://localhost:1313/'
+# `hugo server` overrides baseURL for local dev. GitHub Actions uses Pages’ real URL via --baseURL.
+# If you build with `hugo` locally for preview, set this to your site (user page: https://USER.github.io/).
+baseURL = 'https://benguinsan.github.io/FCAJ_Portfolio/'
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
 title = 'FCAJ Report'
