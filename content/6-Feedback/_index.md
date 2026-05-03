@@ -9,7 +9,7 @@ pre: " <b> 6. </b> "
 # Sharing and Feedback
 
 ## 1. Program Experience
-The First Cloud AI Journey internship program was an excellent learning experience. I felt both challenged and supported throughout the 12 weeks. The combination of theory and hands-on projects strengthened my understanding of AWS services. Guidance from the AWS team was truly invaluable.
+The First Cloud AI Journey internship program was an excellent learning experience. I felt both challenged and supported throughout the 8 weeks. The combination of theory and hands-on projects strengthened my understanding of AWS services. Guidance from the AWS team was truly invaluable.
 
 ## 2. Satisfaction Level
 I am very satisfied with the program (**9/10**). The curriculum was well-structured, covering essential AWS services from fundamental to advanced levels. Weekly sessions and community events significantly enhanced my learning experience. The main area for improvement is allocating more time for complex hands-on labs.

@@ -9,7 +9,7 @@ pre: " <b> 6. </b> "
 # Chia sẻ và phản hồi
 
 ## 1. Cảm nhận về chương trình
-Chương trình thực tập First Cloud AI Journey là một trải nghiệm học tập tuyệt vời. Tôi cảm thấy được thử thách và hỗ trợ trong suốt 12 tuần. Sự kết hợp giữa học lý thuyết và các dự án thực hành đã giúp củng cố hiểu biết của tôi về các dịch vụ AWS. Sự hướng dẫn từ đội AWS là vô giá.
+Chương trình thực tập First Cloud AI Journey là một trải nghiệm học tập tuyệt vời. Tôi cảm thấy được thử thách và hỗ trợ trong suốt 8 tuần. Sự kết hợp giữa học lý thuyết và các dự án thực hành đã giúp củng cố hiểu biết của tôi về các dịch vụ AWS. Sự hướng dẫn từ đội AWS là vô giá.
 
 ## 2. Mức độ hài lòng
 Tôi rất hài lòng với chương trình (**9/10**). Chương trình học được cấu trúc tốt, bao gồm các dịch vụ AWS thiết yếu từ cơ bản đến nâng cao. Các buổi học hàng tuần và sự kiện cộng đồng đã nâng cao đáng kể trải nghiệm học tập. Điểm duy nhất cần cải thiện là thêm thời gian cho các bài lab thực hành phức tạp.
