@@ -8,28 +8,32 @@ pre: " <b> 1.5. </b> "
 
 **Internship period (Week 5):** 06/04/2026 – 12/04/2026
 
-### Week 5 objectives (assigned focus)
+### Week 5 objectives:
 
-* Hands-on **AWS networking workshop** content (per company lab track).
-* Distribute content via **CloudFront** (CDN behaviours, origins).
-* Introduction to **AWS CDK** (project layout, `cdk synth`, `cdk deploy`).
+* Continue the **workshop** hands-on exercises following the course materials.
+* Start the **architecture diagram** for the **personal expense management** project using **draw.io**.
+* Complete **Amazon CloudFront** lab practice (content delivery / CDN).
+* Begin **VPC and subnet** infrastructure for the project with **Terraform**.
+* Produce a **rough monthly cost estimate** for the **AWS services** planned for the app (aligned with the architecture diagram).
 
-### Weekly plan by day
+### Tasks for this week:
 
-| Day | Date | Activities | Reference |
-| --- | --- | --- | --- |
-| Mon | 06/04/2026 | Workshop: VPC / subnets / routing recap + guided network exercises | Workshop materials / mentor |
-| Tue | 07/04/2026 | Workshop: load balancing & TLS termination patterns (concept + lab) | [ELB](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/introduction.html) |
-| Wed | 08/04/2026 | **CloudFront** lab: create distribution, attach **S3** or **ALB** origin, cache policy | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
-| Thu | 09/04/2026 | **AWS CDK** setup: Node/Java runtime; `cdk init`; **bootstrap** stack; first construct | [CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) |
-| Fri | 10/04/2026 | CDK: synthesize & deploy a small stack; document parameters & teardown | [CDK Workshop](https://cdkworkshop.com/) |
+| Day | Tasks | Start date | Completion date | Reference |
+| --- | --- | --- | --- | --- |
+| 2 | - Continue the workshop from the lab guide (in-progress modules).<br>- Capture items to reflect in the architecture diagram. | 06/04/2026 | 06/04/2026 | Workshop materials |
+| 3 | - Set up **draw.io** (desktop or web).<br>- Draft the diagram: users, frontend, API, database, main data flows for the personal expense app.<br>- Save the diagram using the team naming/version convention. | 07/04/2026 | 07/04/2026 | [draw.io](https://www.drawio.com/) |
+| 4 | - **CloudFront lab:** create a distribution, origin (e.g. **S3** or **ALB**), behaviours, basic cache policy.<br>- Record the endpoint URL and verification steps. | 08/04/2026 | 08/04/2026 | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
+| 5 | - **Terraform:** initialise a module or stack for **VPC** (CIDR, AZs, public/private **subnets**).<br>- Run `terraform fmt`, `validate`, and `plan` in a dev environment.<br>- Align the draw.io diagram with resources defined in code. | 09/04/2026 | 09/04/2026 | Project docs / infrastructure repo |
+| 6 | - Finalise a minimal VPC/subnet baseline for the project; update README or code comments.<br>- **Cost estimate:** list services from the diagram (VPC, compute, database, S3, CloudFront, auth, monitoring, …); use the **[AWS Pricing Calculator](https://calculator.aws/)** or a spreadsheet plus **Cost Explorer** (if available) to estimate **USD/month** with explicit assumptions (region, instance types, storage, requests).<br>- Review spend from experiments; tear down anything unnecessary (if applicable). | 10/04/2026 | 10/04/2026 | [Pricing Calculator](https://calculator.aws/) · [Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) |
 
-### What was achieved this week
+### Week 5 outcomes:
 
-* Completed targeted **network workshop** tasks and mapped them to the group architecture.
+* Progressed through the workshop per the syllabus and captured what belongs in the architecture view.
 
-* Delivered static or API traffic through **CloudFront** with documented origin settings.
+* Produced an initial **draw.io architecture** draft for the personal expense topic, aligned with the team.
 
-* Bootstrapped a **CDK** app and deployed a minimal stack to a dev account.
+* Completed the **CloudFront** lab (distribution, origin, basic access checks).
 
-* Linked CDK outputs to the team’s **IaC** conventions (naming, tags, environments).
+* Started **Terraform** for **VPC and subnets** for the project, with illustrative `plan` / `apply` on dev (where permitted).
+
+* Produced a **cost estimate table or notes** for planned services (with assumptions and pricing sources) to compare options and control lab spend.

@@ -300,68 +300,79 @@
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Week 5 Worklog</h1>
     <p><strong>Internship period (Week 5):</strong> 06/04/2026 – 12/04/2026</p>
-<h3 id="week-5-objectives-assigned-focus">Week 5 objectives (assigned focus)</h3>
+<h3 id="week-5-objectives">Week 5 objectives:</h3>
 <ul>
-<li>Hands-on <strong>AWS networking workshop</strong> content (per company lab track).</li>
-<li>Distribute content via <strong>CloudFront</strong> (CDN behaviours, origins).</li>
-<li>Introduction to <strong>AWS CDK</strong> (project layout, <code>cdk synth</code>, <code>cdk deploy</code>).</li>
+<li>Continue the <strong>workshop</strong> hands-on exercises following the course materials.</li>
+<li>Start the <strong>architecture diagram</strong> for the <strong>personal expense management</strong> project using <strong>draw.io</strong>.</li>
+<li>Complete <strong>Amazon CloudFront</strong> lab practice (content delivery / CDN).</li>
+<li>Begin <strong>VPC and subnet</strong> infrastructure for the project with <strong>Terraform</strong>.</li>
+<li>Produce a <strong>rough monthly cost estimate</strong> for the <strong>AWS services</strong> planned for the app (aligned with the architecture diagram).</li>
 </ul>
-<h3 id="weekly-plan-by-day">Weekly plan by day</h3>
+<h3 id="tasks-for-this-week">Tasks for this week:</h3>
 <table>
   <thead>
       <tr>
           <th>Day</th>
-          <th>Date</th>
-          <th>Activities</th>
+          <th>Tasks</th>
+          <th>Start date</th>
+          <th>Completion date</th>
           <th>Reference</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Mon</td>
+          <td>2</td>
+          <td>- Continue the workshop from the lab guide (in-progress modules).<br>- Capture items to reflect in the architecture diagram.</td>
           <td>06/04/2026</td>
-          <td>Workshop: VPC / subnets / routing recap + guided network exercises</td>
-          <td>Workshop materials / mentor</td>
+          <td>06/04/2026</td>
+          <td>Workshop materials</td>
       </tr>
       <tr>
-          <td>Tue</td>
+          <td>3</td>
+          <td>- Set up <strong>draw.io</strong> (desktop or web).<br>- Draft the diagram: users, frontend, API, database, main data flows for the personal expense app.<br>- Save the diagram using the team naming/version convention.</td>
           <td>07/04/2026</td>
-          <td>Workshop: load balancing &amp; TLS termination patterns (concept + lab)</td>
-          <td><a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/introduction.html">ELB</a></td>
+          <td>07/04/2026</td>
+          <td><a href="https://www.drawio.com/">draw.io</a></td>
       </tr>
       <tr>
-          <td>Wed</td>
+          <td>4</td>
+          <td>- <strong>CloudFront lab:</strong> create a distribution, origin (e.g. <strong>S3</strong> or <strong>ALB</strong>), behaviours, basic cache policy.<br>- Record the endpoint URL and verification steps.</td>
           <td>08/04/2026</td>
-          <td><strong>CloudFront</strong> lab: create distribution, attach <strong>S3</strong> or <strong>ALB</strong> origin, cache policy</td>
+          <td>08/04/2026</td>
           <td><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">CloudFront</a></td>
       </tr>
       <tr>
-          <td>Thu</td>
+          <td>5</td>
+          <td>- <strong>Terraform:</strong> initialise a module or stack for <strong>VPC</strong> (CIDR, AZs, public/private <strong>subnets</strong>).<br>- Run <code>terraform fmt</code>, <code>validate</code>, and <code>plan</code> in a dev environment.<br>- Align the draw.io diagram with resources defined in code.</td>
           <td>09/04/2026</td>
-          <td><strong>AWS CDK</strong> setup: Node/Java runtime; <code>cdk init</code>; <strong>bootstrap</strong> stack; first construct</td>
-          <td><a href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a></td>
+          <td>09/04/2026</td>
+          <td>Project docs / infrastructure repo</td>
       </tr>
       <tr>
-          <td>Fri</td>
+          <td>6</td>
+          <td>- Finalise a minimal VPC/subnet baseline for the project; update README or code comments.<br>- <strong>Cost estimate:</strong> list services from the diagram (VPC, compute, database, S3, CloudFront, auth, monitoring, …); use the <strong><a href="https://calculator.aws/">AWS Pricing Calculator</a></strong> or a spreadsheet plus <strong>Cost Explorer</strong> (if available) to estimate <strong>USD/month</strong> with explicit assumptions (region, instance types, storage, requests).<br>- Review spend from experiments; tear down anything unnecessary (if applicable).</td>
           <td>10/04/2026</td>
-          <td>CDK: synthesize &amp; deploy a small stack; document parameters &amp; teardown</td>
-          <td><a href="https://cdkworkshop.com/">CDK Workshop</a></td>
+          <td>10/04/2026</td>
+          <td><a href="https://calculator.aws/">Pricing Calculator</a> · <a href="https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html">Cost Explorer</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="what-was-achieved-this-week">What was achieved this week</h3>
+<h3 id="week-5-outcomes">Week 5 outcomes:</h3>
 <ul>
 <li>
-<p>Completed targeted <strong>network workshop</strong> tasks and mapped them to the group architecture.</p>
+<p>Progressed through the workshop per the syllabus and captured what belongs in the architecture view.</p>
 </li>
 <li>
-<p>Delivered static or API traffic through <strong>CloudFront</strong> with documented origin settings.</p>
+<p>Produced an initial <strong>draw.io architecture</strong> draft for the personal expense topic, aligned with the team.</p>
 </li>
 <li>
-<p>Bootstrapped a <strong>CDK</strong> app and deployed a minimal stack to a dev account.</p>
+<p>Completed the <strong>CloudFront</strong> lab (distribution, origin, basic access checks).</p>
 </li>
 <li>
-<p>Linked CDK outputs to the team’s <strong>IaC</strong> conventions (naming, tags, environments).</p>
+<p>Started <strong>Terraform</strong> for <strong>VPC and subnets</strong> for the project, with illustrative <code>plan</code> / <code>apply</code> on dev (where permitted).</p>
+</li>
+<li>
+<p>Produced a <strong>cost estimate table or notes</strong> for planned services (with assumptions and pricing sources) to compare options and control lab spend.</p>
 </li>
 </ul>
 </article>

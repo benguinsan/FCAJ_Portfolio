@@ -300,68 +300,79 @@
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Worklog Tuần 5</h1>
     <p><strong>Thời gian thực tập (tuần 5):</strong> 06/04/2026 – 12/04/2026</p>
-<h3 id="mục-tiêu-tuần-5-theo-nội-dung-giao-tại-đơn-vị">Mục tiêu tuần 5 (theo nội dung giao tại đơn vị)</h3>
+<h3 id="mục-tiêu-tuần-5">Mục tiêu tuần 5:</h3>
 <ul>
-<li>Thực hành <strong>Workshop mạng trên AWS</strong> (theo lab đơn vị).</li>
-<li>Phân phối nội dung qua <strong>CloudFront</strong>.</li>
-<li>Tìm hiểu <strong>AWS CDK</strong> (cấu trúc project, <code>cdk synth</code>, <code>cdk deploy</code>).</li>
+<li>Tiếp tục thực hành <strong>workshop</strong> theo tài liệu hướng dẫn.</li>
+<li>Bắt đầu vẽ <strong>sơ đồ kiến trúc</strong> cho đề tài <strong>quản lý chi tiêu cá nhân</strong> bằng <strong>draw.io</strong>.</li>
+<li><strong>Thực hành lab Amazon CloudFront</strong> (phân phối nội dung / CDN).</li>
+<li>Bước đầu dựng <strong>hạ tầng mạng VPC và Subnet</strong> cho đồ án bằng <strong>Terraform</strong>.</li>
+<li><strong>Ước tính chi phí dự kiến</strong> (theo tháng hoặc kịch bản tải) cho các <strong>dịch vụ AWS</strong> dự kiến dùng trong ứng dụng (đối chiếu sơ đồ kiến trúc).</li>
 </ul>
-<h3 id="kế-hoạch-công-việc-theo-ngày">Kế hoạch công việc theo ngày</h3>
+<h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
   <thead>
       <tr>
           <th>Thứ</th>
-          <th>Ngày</th>
-          <th>Nội dung công việc</th>
-          <th>Tài liệu</th>
+          <th>Công việc</th>
+          <th>Ngày bắt đầu</th>
+          <th>Ngày hoàn thành</th>
+          <th>Nguồn tài liệu</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>2</td>
+          <td>- Tiếp tục workshop theo tài liệu (bài lab / phần đang dở).<br>- Ghi chú các điểm cần đưa vào sơ đồ kiến trúc.</td>
           <td>06/04/2026</td>
-          <td>Workshop: ôn VPC/subnet/routing + bài tập mạng có hướng dẫn</td>
-          <td>Tài liệu workshop / mentor</td>
+          <td>06/04/2026</td>
+          <td>Tài liệu workshop</td>
       </tr>
       <tr>
           <td>3</td>
+          <td>- Cài đặt / làm quen <strong>draw.io</strong> (hoặc bản web).<br>- Khởi tạo sơ đồ: người dùng, frontend, API, CSDL, luồng dữ liệu chính cho ứng dụng quản lý chi tiêu cá nhân.<br>- Lưu file sơ đồ theo quy ước nhóm (tên, phiên bản).</td>
           <td>07/04/2026</td>
-          <td>Workshop: cân bằng tải &amp; mô hình TLS (lý thuyết + lab)</td>
-          <td><a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/introduction.html">ELB</a></td>
+          <td>07/04/2026</td>
+          <td><a href="https://www.drawio.com/">draw.io</a></td>
       </tr>
       <tr>
           <td>4</td>
+          <td>- <strong>Thực hành lab CloudFront:</strong> tạo distribution, origin (ví dụ <strong>S3</strong> hoặc <strong>ALB</strong>), behaviour, cache policy cơ bản.<br>- Ghi lại URL endpoint và bước kiểm tra.</td>
           <td>08/04/2026</td>
-          <td>Lab <strong>CloudFront</strong>: distribution, origin <strong>S3</strong> hoặc <strong>ALB</strong>, cache policy</td>
+          <td>08/04/2026</td>
           <td><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">CloudFront</a></td>
       </tr>
       <tr>
           <td>5</td>
+          <td>- <strong>Terraform:</strong> khởi tạo module hoặc stack cho <strong>VPC</strong> (CIDR, AZ, <strong>subnet</strong> public/private).<br>- <code>terraform fmt</code>, <code>validate</code>, <code>plan</code> trên môi trường dev.<br>- Đối chiếu sơ đồ draw.io với tài nguyên định nghĩa trong code.</td>
           <td>09/04/2026</td>
-          <td>Cài <strong>AWS CDK</strong>; <code>cdk init</code>; stack <strong>bootstrap</strong>; construct đầu tiên</td>
-          <td><a href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a></td>
+          <td>09/04/2026</td>
+          <td>Tài liệu đồ án / repo infrastructure</td>
       </tr>
       <tr>
           <td>6</td>
+          <td>- Hoàn thiện phần VPC/subnet tối thiểu cho đồ án; cập nhật README hoặc comment trong code.<br>- <strong>Tính toán chi phí dự kiến:</strong> liệt kê dịch vụ từ sơ đồ (VPC, compute, CSDL, S3, CloudFront, xác thực, giám sát…); dùng <strong><a href="https://calculator.aws/">AWS Pricing Calculator</a></strong> hoặc bảng giả định + <strong>Cost Explorer</strong> (nếu đã có tài khoản/thử nghiệm) để ước tính theo <strong>USD/tháng</strong>, ghi rõ giả định (region, loại instance, dung lượng, request).<br>- Rà soát chi phí tài nguyên thử nghiệm đã chạy; dọn tài nguyên không cần (nếu có).</td>
           <td>10/04/2026</td>
-          <td>CDK: <code>synth</code> &amp; deploy stack nhỏ; ghi chú tham số &amp; teardown</td>
-          <td><a href="https://cdkworkshop.com/">CDK Workshop</a></td>
+          <td>10/04/2026</td>
+          <td><a href="https://calculator.aws/">Pricing Calculator</a> · <a href="https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html">Cost Explorer</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần</h3>
+<h3 id="kết-quả-đạt-được-tuần-5">Kết quả đạt được tuần 5:</h3>
 <ul>
 <li>
-<p>Hoàn thành phần workshop <strong>mạng</strong> và liên hệ với kiến trúc nhóm.</p>
+<p>Đã tiếp tục workshop theo đúng tiến độ tài liệu và nắm phần còn lại cần chuyển sang kiến trúc.</p>
 </li>
 <li>
-<p>Cấu hình <strong>CloudFront</strong> với origin và hành vi cache được ghi lại.</p>
+<p>Có bản nháp / phiên bản đầu <strong>sơ đồ kiến trúc</strong> (draw.io) cho đề tài quản lý chi tiêu cá nhân, thống nhất với nhóm.</p>
 </li>
 <li>
-<p>Khởi tạo ứng dụng <strong>CDK</strong> và deploy stack tối thiểu lên môi trường dev.</p>
+<p>Hoàn thành phần <strong>thực hành CloudFront</strong> theo lab (distribution, origin, kiểm tra truy cập).</p>
 </li>
 <li>
-<p>Thống nhất quy ước đặt tên, tag, môi trường với nhóm <strong>IaC</strong>.</p>
+<p>Đã bắt đầu <strong>Terraform</strong> cho <strong>VPC và subnet</strong> phục vụ đồ án, có <code>plan</code>/<code>apply</code> minh họa trên dev (nếu được phép).</p>
+</li>
+<li>
+<p>Có <strong>bảng / ghi chú ước tính chi phí dự kiến</strong> cho các dịch vụ sẽ dùng trong ứng dụng (kèm giả định và nguồn tra giá), phục vụ so sánh phương án và kiểm soát ngân sách thử nghiệm.</p>
 </li>
 </ul>
 </article>

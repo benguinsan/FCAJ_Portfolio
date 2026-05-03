@@ -300,65 +300,75 @@
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Week 6 Worklog</h1>
     <p><strong>Internship period (Week 6):</strong> 13/04/2026 – 19/04/2026</p>
-<h3 id="week-6-objectives-assigned-focus">Week 6 objectives (assigned focus)</h3>
+<h3 id="week-6-objectives">Week 6 objectives:</h3>
 <ul>
-<li>User authentication with <strong>Amazon Cognito</strong> (user pools, app clients, hosted UI concepts).</li>
-<li>Contribute to group project infrastructure: <strong>VPC</strong> &amp; <strong>Security Groups</strong> baseline.</li>
-<li>Align <strong>Cognito</strong> with the application’s sign-in / token flow.</li>
+<li>In the <strong>first days of the week</strong>, keep <strong>practising</strong> and <strong>studying the documentation</strong> (continuing prior workshop/lab work).</li>
+<li><strong>Learn and complete the Amazon Cognito lab</strong> (user pool, app client, sign-in flow).</li>
+<li><strong>Implement user authentication</strong> for the project app with <strong>Cognito</strong> and <strong>Terraform</strong>, including a <strong>VPC interface endpoint</strong> for <strong><code>cognito-idp</code></strong> so private traffic does <strong>not go through a NAT Gateway</strong> (cost/egress optimisation).</li>
+<li><strong>Build and trial hosting</strong> (e.g. frontend) with <strong>AWS Amplify</strong>.</li>
 </ul>
-<h3 id="weekly-plan-by-day">Weekly plan by day</h3>
+<h3 id="tasks-for-this-week">Tasks for this week:</h3>
 <table>
   <thead>
       <tr>
           <th>Day</th>
-          <th>Date</th>
-          <th>Activities</th>
+          <th>Tasks</th>
+          <th>Start date</th>
+          <th>Completion date</th>
           <th>Reference</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Mon</td>
+          <td>2</td>
+          <td>- Continue hands-on work from the lab guide.<br>- Read the <strong>Amazon Cognito</strong> overview (user pools vs identity pools; project use cases).</td>
           <td>13/04/2026</td>
-          <td><strong>Cognito</strong> user pools; password/MFA policies; app client settings</td>
+          <td>13/04/2026</td>
           <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html">Cognito</a></td>
       </tr>
       <tr>
-          <td>Tue</td>
+          <td>3</td>
+          <td>- <strong>Cognito lab:</strong> create a user pool and app client; try the hosted UI or a basic token flow in a sandbox.<br>- Note callback URLs, scopes, and client secrets (if used).</td>
           <td>14/04/2026</td>
-          <td>Hosted UI &amp; OAuth/OIDC flows (read + diagram); test tokens in sandbox</td>
+          <td>14/04/2026</td>
           <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html">Hosted UI</a></td>
       </tr>
       <tr>
-          <td>Wed</td>
+          <td>4</td>
+          <td>- <strong>Terraform:</strong> define Cognito (pool, client) and related networking.<br>- Create a <strong>VPC interface endpoint</strong> for the service DNS pattern <code>com.amazonaws.&lt;REGION&gt;.cognito-idp</code> (replace <code>REGION</code> with your AWS Region code) in private subnets; update <strong>route tables</strong> / <strong>security groups</strong> for HTTPS to the endpoint; confirm workloads in the VPC reach Cognito <strong>without Internet egress via NAT</strong>.</td>
           <td>15/04/2026</td>
-          <td>Group project: review <strong>VPC</strong> diagram (subnets, IGW, NAT, endpoints)</td>
-          <td>Team design doc</td>
+          <td>15/04/2026</td>
+          <td><a href="https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoints.html">VPC endpoints</a></td>
       </tr>
       <tr>
-          <td>Thu</td>
+          <td>5</td>
+          <td>- Finish <strong>app integration</strong> with Cognito (environment variables, JWKS, refresh tokens — per team architecture).<br>- Test sign-in and token retrieval in dev.</td>
           <td>16/04/2026</td>
-          <td>Implement / refine <strong>Security Groups</strong> for ALB, ECS tasks, RDS in repo (<code>terraform</code>/<code>cdk</code>)</td>
-          <td>Repo + mentor review</td>
+          <td>16/04/2026</td>
+          <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html">Cognito app integration</a></td>
       </tr>
       <tr>
-          <td>Fri</td>
+          <td>6</td>
+          <td>- <strong>AWS Amplify:</strong> create an app, connect the Git repo, configure build branches; run <strong>build &amp; deploy</strong>.<br>- Align with Cognito (domain / redirects if using Amplify Hosting with auth).</td>
           <td>17/04/2026</td>
-          <td>Wire <strong>Cognito</strong> client IDs &amp; callback URLs to dev environment; document secrets handling</td>
-          <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html">Cognito app integration</a></td>
+          <td>17/04/2026</td>
+          <td><a href="https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html">Amplify Hosting</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="what-was-achieved-this-week">What was achieved this week</h3>
+<h3 id="week-6-outcomes">Week 6 outcomes:</h3>
 <ul>
 <li>
-<p>Configured a <strong>Cognito</strong> user pool suitable for dev/testing and understood token lifecycles.</p>
+<p><strong>Continued</strong> early-week practice and documentation study on schedule.</p>
 </li>
 <li>
-<p>Contributed <strong>networking</strong> changes (VPC + <strong>SG</strong> rules) reviewed with the team.</p>
+<p>Completed the core <strong>Cognito lab</strong> and understood the auth flow for the app.</p>
 </li>
 <li>
-<p>Produced integration notes for frontend/backend teams on <strong>auth</strong> configuration.</p>
+<p>Delivered <strong>Cognito via Terraform</strong> with a <strong><code>cognito-idp</code> VPC endpoint</strong> so private calls avoid relying on a <strong>NAT Gateway</strong>, as planned.</p>
+</li>
+<li>
+<p><strong>Trialled Amplify Hosting</strong> (build/deploy) and captured how it connects to the auth flow when configured.</p>
 </li>
 </ul>
 </article>

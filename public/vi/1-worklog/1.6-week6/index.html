@@ -300,65 +300,75 @@
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Worklog Tuần 6</h1>
     <p><strong>Thời gian thực tập (tuần 6):</strong> 13/04/2026 – 19/04/2026</p>
-<h3 id="mục-tiêu-tuần-6-theo-nội-dung-giao-tại-đơn-vị">Mục tiêu tuần 6 (theo nội dung giao tại đơn vị)</h3>
+<h3 id="mục-tiêu-tuần-6">Mục tiêu tuần 6:</h3>
 <ul>
-<li>Xác thực người dùng với <strong>AWS Cognito</strong>.</li>
-<li>Xây dựng phần hạ tầng đồ án nhóm: <strong>VPC</strong> — <strong>Security Group</strong> (networking).</li>
-<li>Tích hợp <strong>Cognito</strong> với luồng đăng nhập / token ứng dụng.</li>
+<li>Những <strong>ngày đầu tuần</strong> tiếp tục <strong>thực hành</strong> và <strong>đọc tài liệu</strong> (nối tiếp workshop / lab các tuần trước).</li>
+<li><strong>Tìm hiểu và thực hành lab Amazon Cognito</strong> (user pool, app client, luồng đăng nhập).</li>
+<li><strong>Triển khai xác thực người dùng</strong> cho ứng dụng đồ án bằng <strong>Cognito</strong> kết hợp <strong>Terraform</strong>, trong đó có <strong>VPC interface endpoint</strong> tới dịch vụ <strong><code>cognito-idp</code></strong> để luồng private <strong>không đi qua NAT Gateway</strong> (giảm phụ thuộc NAT và tối ưu chi phí/luồng egress).</li>
+<li><strong>Xây dựng và thử nghiệm hosting</strong> frontend (hoặc full-stack phù hợp) qua <strong>AWS Amplify</strong>.</li>
 </ul>
-<h3 id="kế-hoạch-công-việc-theo-ngày">Kế hoạch công việc theo ngày</h3>
+<h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
   <thead>
       <tr>
           <th>Thứ</th>
-          <th>Ngày</th>
-          <th>Nội dung công việc</th>
-          <th>Tài liệu</th>
+          <th>Công việc</th>
+          <th>Ngày bắt đầu</th>
+          <th>Ngày hoàn thành</th>
+          <th>Nguồn tài liệu</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>2</td>
+          <td>- Tiếp tục thực hành theo tài liệu / lab đang dở.<br>- Đọc tổng quan <strong>Amazon Cognito</strong> (User Pool vs Identity Pool; use case đồ án).</td>
           <td>13/04/2026</td>
-          <td><strong>Cognito</strong> user pool; chính sách mật khẩu/MFA; cấu hình app client</td>
+          <td>13/04/2026</td>
           <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html">Cognito</a></td>
       </tr>
       <tr>
           <td>3</td>
+          <td>- <strong>Lab Cognito:</strong> tạo User Pool, App client; thử Hosted UI hoặc luồng token cơ bản trên môi trường thử.<br>- Ghi chú callback URL, scope, bí mật client (nếu dùng).</td>
           <td>14/04/2026</td>
-          <td>Hosted UI &amp; luồng OAuth/OIDC (đọc + vẽ sơ đồ); thử token trên sandbox</td>
+          <td>14/04/2026</td>
           <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html">Hosted UI</a></td>
       </tr>
       <tr>
           <td>4</td>
+          <td>- <strong>Terraform:</strong> định nghĩa Cognito (pool, client) và tài nguyên mạng liên quan.<br>- Tạo <strong>VPC Interface Endpoint</strong> tới DNS dịch vụ dạng <code>com.amazonaws.&lt;REGION&gt;.cognito-idp</code> (thay <code>REGION</code> bằng mã vùng triển khai) trong subnet private; cập nhật <strong>route table</strong> / <strong>security group</strong> cho phép HTTPS tới endpoint; xác nhận ứng dụng/worker trong VPC gọi Cognito <strong>không cần ra Internet qua NAT</strong>.</td>
           <td>15/04/2026</td>
-          <td>Đồ án nhóm: rà soát sơ đồ <strong>VPC</strong> (subnet, IGW, NAT, endpoint)</td>
-          <td>Tài liệu thiết kế nhóm</td>
+          <td>15/04/2026</td>
+          <td><a href="https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoints.html">VPC endpoints</a></td>
       </tr>
       <tr>
           <td>5</td>
+          <td>- Hoàn thiện tích hợp <strong>xác thực ứng dụng</strong> với Cognito (biến môi trường, JWKS, refresh token — theo kiến trúc nhóm).<br>- Kiểm thử đăng nhập / lấy token từ môi trường dev.</td>
           <td>16/04/2026</td>
-          <td>Triển khai / chỉnh <strong>Security Group</strong> cho ALB, ECS, RDS trong repo</td>
-          <td>Repo + review mentor</td>
+          <td>16/04/2026</td>
+          <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html">Cognito app integration</a></td>
       </tr>
       <tr>
           <td>6</td>
+          <td>- <strong>AWS Amplify:</strong> tạo app, kết nối repo (Git), cấu hình nhánh build; chạy thử <strong>build &amp; deploy</strong> hosting.<br>- Đối chiếu với Cognito (domain / redirect nếu dùng Amplify Hosting + auth).</td>
           <td>17/04/2026</td>
-          <td>Gắn client ID &amp; callback <strong>Cognito</strong> vào môi trường dev; ghi chú bảo mật bí mật</td>
-          <td><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-integration.html">Cognito app integration</a></td>
+          <td>17/04/2026</td>
+          <td><a href="https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html">Amplify Hosting</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần</h3>
+<h3 id="kết-quả-đạt-được-tuần-6">Kết quả đạt được tuần 6:</h3>
 <ul>
 <li>
-<p>Cấu hình <strong>Cognito</strong> phục vụ dev/test và nắm vòng đời token.</p>
+<p>Đã <strong>nối tiếp</strong> thực hành và đọc tài liệu đầu tuần theo tiến độ đồ án.</p>
 </li>
 <li>
-<p>Đóng góp thay đổi <strong>mạng</strong> (VPC + <strong>SG</strong>) được nhóm review.</p>
+<p>Hoàn thành phần <strong>lab Cognito</strong> cơ bản và nắm luồng xác thực phù hợp ứng dụng.</p>
 </li>
 <li>
-<p>Chuẩn bị tài liệu tích hợp cho frontend/backend về <strong>xác thực</strong>.</p>
+<p>Đã triển khai <strong>Cognito bằng Terraform</strong> kèm <strong>VPC endpoint <code>cognito-idp</code></strong>, cho phép gọi API Cognito từ mạng private <strong>không phụ thuộc NAT Gateway</strong> như hướng tối ưu đã chọn.</p>
+</li>
+<li>
+<p>Đã <strong>thử nghiệm Amplify Hosting</strong> (build/deploy) và ghi nhận bước liên hệ với luồng auth nếu có cấu hình.</p>
 </li>
 </ul>
 </article>
