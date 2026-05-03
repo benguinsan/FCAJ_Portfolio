@@ -299,11 +299,13 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Worklog Tuần 2</h1>
-    <h3 id="mục-tiêu-tuần-2">Mục tiêu tuần 2:</h3>
+    <div class="my-4 rounded-lg border p-4 border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-100">
+  ⚠️ <strong>Lưu ý:</strong> Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng <strong>không sao chép nguyên văn</strong> cho bài báo cáo của bạn kể cả warning này.
+</div>
+<h3 id="mục-tiêu-tuần-2">Mục tiêu tuần 2:</h3>
 <ul>
-<li>Đọc tài liệu và thực hành nhóm dịch vụ Compute của AWS: <strong>EC2, AMI, EBS, Auto Scaling, ALB</strong>.</li>
-<li>Tìm hiểu nhóm dịch vụ lưu trữ: <strong>S3</strong> và <strong>AWS Storage Gateway</strong>.</li>
-<li>Thực hành triển khai và hosting <strong>website tĩnh trên S3</strong>.</li>
+<li>Kết nối, làm quen với các thành viên trong First Cloud Journey.</li>
+<li>Hiểu dịch vụ AWS cơ bản, cách dùng console &amp; CLI.</li>
 </ul>
 <h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
@@ -319,52 +321,85 @@
   <tbody>
       <tr>
           <td>2</td>
-          <td>- Đọc tài liệu Amazon EC2, tìm hiểu các loại instance và chiến lược tối ưu chi phí (Spot, Reserved, Savings Plans).<br>- Thực hành khởi tạo EC2 cơ bản.<br>- Hiểu lưu trữ bền vững qua EBS.<br>- Thực hành sao lưu/nhân bản bằng AMI và Snapshot.</td>
-          <td>16/03/2026</td>
-          <td>16/03/2026</td>
-          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
+          <td>- Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập</td>
+          <td>11/08/2025</td>
+          <td>11/08/2025</td>
+          <td></td>
       </tr>
       <tr>
           <td>3</td>
-          <td>- Thực hành lab triển khai Node.js trên EC2.<br>- Tạo VPC, cấu hình Security Group, khởi tạo EC2.<br>- Kết nối an toàn qua SSH.</td>
-          <td>17/03/2026</td>
-          <td>17/03/2026</td>
+          <td>- Tìm hiểu AWS và các loại dịch vụ <br>  + Compute <br>  + Storage <br>  + Networking <br>  + Database <br>  + &hellip; <br></td>
+          <td>12/08/2025</td>
+          <td>12/08/2025</td>
           <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>4</td>
-          <td>- Tiếp tục triển khai Node.js trên EC2.<br>- Cài đặt và cấu hình LAMP.<br>- Cài Node.js trên Linux, hoàn thiện deploy ứng dụng.</td>
-          <td>18/03/2026</td>
-          <td>18/03/2026</td>
+          <td>- Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console &amp; AWS CLI <br> - <strong>Thực hành:</strong> <br>  + Tạo AWS account <br>  + Cài AWS CLI &amp; cấu hình <br>   + Cách sử dụng AWS CLI</td>
+          <td>13/08/2025</td>
+          <td>13/08/2025</td>
           <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>5</td>
-          <td>- Tìm hiểu AWS Storage Gateway và Amazon S3.<br>- Thực hành tạo và cấu hình S3 bucket, thao tác object.<br>- Thực hành Cross-Region Replication để đảm bảo HA.</td>
-          <td>19/03/2026</td>
-          <td>19/03/2026</td>
+          <td>- Tìm hiểu EC2 cơ bản: <br>  + Instance types <br>  + AMI <br>  + EBS <br>  + &hellip; <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br></td>
+          <td>14/08/2025</td>
+          <td>15/08/2025</td>
           <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>6</td>
-          <td>- Thực hành hosting web tĩnh trên S3.<br>- Ứng dụng CloudFront.<br>- Cấu hình CORS và OAC để bảo vệ truy cập S3 bucket.<br>- Tìm hiểu Bucket Versioning.</td>
-          <td>20/03/2026</td>
-          <td>20/03/2026</td>
+          <td>- <strong>Thực hành:</strong> <br>  + Tạo EC2 instance <br>  + Kết nối SSH <br>  + Gắn EBS volume</td>
+          <td>15/08/2025</td>
+          <td>15/08/2025</td>
           <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
 <h3 id="kết-quả-đạt-được-tuần-2">Kết quả đạt được tuần 2:</h3>
 <ul>
-<li>Hoàn thành luồng thực hành từ dựng hạ tầng EC2 đến triển khai Node.js lên trên hạ tầng AWS Cloud</li>
-<li>Nắm được các thành phần Compute cốt lõi: AMI, EBS, instance types và kiến thức cơ bản về scaling/load balancing.</li>
-<li>Hoàn thành thực hành S3: tạo bucket, thao tác object, hosting website tĩnh và tích hợp CloudFront cơ bản.</li>
-<li>Hiểu thêm về bảo vệ dữ liệu và tính sẵn sàng: Snapshot, replication, OAC, CORS và versioning.</li>
-</ul>
-<h3 id="khó-khăn-gặp-phải-và-hướng-xử-lý">Khó khăn gặp phải và hướng xử lý:</h3>
+<li>
+<p>Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản:</p>
 <ul>
-<li><strong>Khó khăn:</strong> Khi deploy Node.js, EC2 có lúc bị chậm/treo trong bước cài dependency do RAM hạn chế trên instance nhỏ.</li>
-<li><strong>Ý tưởng/Hướng xử lý (giữ nguyên):</strong> Bổ sung <strong>swap</strong> trên EBS, kích hoạt và tinh chỉnh swappiness để giảm áp lực bộ nhớ trong lúc install/build.</li>
+<li>Compute</li>
+<li>Storage</li>
+<li>Networking</li>
+<li>Database</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Đã tạo và cấu hình AWS Free Tier account thành công.</p>
+</li>
+<li>
+<p>Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.</p>
+</li>
+<li>
+<p>Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:</p>
+<ul>
+<li>Access Key</li>
+<li>Secret Key</li>
+<li>Region mặc định</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:</p>
+<ul>
+<li>Kiểm tra thông tin tài khoản &amp; cấu hình</li>
+<li>Lấy danh sách region</li>
+<li>Xem dịch vụ EC2</li>
+<li>Tạo và quản lý key pair</li>
+<li>Kiểm tra thông tin dịch vụ đang chạy</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.</p>
+</li>
+<li>
+<p>&hellip;</p>
+</li>
 </ul>
 </article>
 

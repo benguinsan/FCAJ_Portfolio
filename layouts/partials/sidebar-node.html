@@ -15,7 +15,7 @@
     {{- $pages := .Scratch.Get "pages" -}}
     {{- $order := .Site.Params.ordersectionsby | default "weight" -}}
     {{- $hasChildren := gt (len $pages) 0 -}}
-    {{- $isOpen := or (.IsAncestor $current) (eq .File.UniqueID $uid) -}}
+    {{- $isOpen := or (.IsAncestor $current) (and .File (eq .File.UniqueID $uid)) -}}
 
     <li class="my-0.5 {{ if .IsAncestor $current }}font-medium{{ end }}">
       {{- if $hasChildren -}}
@@ -25,7 +25,7 @@
           >
             <a
               href="{{ .RelPermalink }}"
-              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 {{ if eq .File.UniqueID $uid }}bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100{{ else }}text-gray-800 dark:text-gray-100{{ end }}"
+              class="min-w-0 flex-1 rounded px-0.5 py-0.5 text-left hover:bg-gray-200 dark:hover:bg-gray-700 {{ if and .File (eq .File.UniqueID $uid) }}bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100{{ else }}text-gray-800 dark:text-gray-100{{ end }}"
               onclick="event.stopPropagation()"
             >
               {{- if .Params.pre }}{{ .Params.pre | safeHTML }}{{ end -}}
@@ -63,7 +63,7 @@
       {{- else -}}
         <a
           href="{{ .RelPermalink }}"
-          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 {{ if eq .File.UniqueID $uid }}bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100{{ else }}text-gray-800 dark:text-gray-100{{ end }}"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 {{ if and .File (eq .File.UniqueID $uid) }}bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100{{ else }}text-gray-800 dark:text-gray-100{{ end }}"
         >
           {{- if .Params.pre }}{{ .Params.pre | safeHTML }}{{ end -}}
           {{- or .Params.menuTitle .LinkTitle .Title -}}
@@ -75,11 +75,11 @@
       {{- end -}}
     </li>
   {{- else -}}
-    {{- if not .Params.Hidden -}}
+    {{- if not .Params.hidden -}}
       <li class="my-0.5">
         <a
           href="{{ .RelPermalink }}"
-          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 {{ if eq .File.UniqueID $uid }}bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100{{ else }}text-gray-800 dark:text-gray-100{{ end }}"
+          class="block rounded px-2 py-1.5 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 {{ if and .File (eq .File.UniqueID $uid) }}bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-100{{ else }}text-gray-800 dark:text-gray-100{{ end }}"
         >
           {{- if .Params.pre }}{{ .Params.pre | safeHTML }}{{ end -}}
           {{- or .Params.menuTitle .LinkTitle .Title -}}
