@@ -1,5 +1,4 @@
-# `hugo server` overrides baseURL for local dev. GitHub Actions uses Pages’ real URL via --baseURL.
-# If you build with `hugo` locally for preview, set this to your site (user page: https://USER.github.io/).
+# `hugo server` overrides baseURL locally. Workflow `gh-pages` dùng `hugo --minify` (không `--baseURL`), nên giá trị này phải trùng URL site thật trên GitHub Pages.
 baseURL = 'https://benguinsan.github.io/FCAJ_Portfolio/'
 languageCode = 'en-us'
 defaultContentLanguage = 'en'

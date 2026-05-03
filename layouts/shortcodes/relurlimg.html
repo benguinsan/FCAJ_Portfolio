@@ -1,0 +1,6 @@
+{{- $path := strings.TrimPrefix "/" (.Get 0) -}}
+{{- $alt := .Get 1 | default "" -}}
+{{- $class := .Get 2 | default "" -}}
+{{- $w := .Get 3 | default "" -}}
+{{- $h := .Get 4 | default "" -}}
+<img src="{{ $path | relURL }}" alt="{{ $alt }}"{{ with $class }} class="{{ . }}"{{ end }}{{ with $w }} width="{{ . }}"{{ end }}{{ with $h }} height="{{ . }}"{{ end }} />

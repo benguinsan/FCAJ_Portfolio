@@ -22,7 +22,7 @@ chapter: false
 <p class="!mb-0">&emsp; <strong>Internship Duration:</strong> From 09/03/2026 to 02/05/2026</p>
 </div>
 <div class="flex shrink-0 flex-col items-center justify-center md:items-end md:justify-start md:pt-1">
-<img src="/images/avatar.png" alt="Nguyen Thanh Phuc — internship at AWS Vietnam" class="!m-0 h-auto max-h-80 w-auto max-w-[min(100%,280px)] rounded-lg object-contain shadow-md" width="770" height="1024" />
+{{< relurlimg "/images/avatar.png" "Nguyen Thanh Phuc — internship at AWS Vietnam" "!m-0 h-auto max-h-80 w-auto max-w-[min(100%,280px)] rounded-lg object-contain shadow-md" "770" "1024" >}}
 </div>
 </div>
 
