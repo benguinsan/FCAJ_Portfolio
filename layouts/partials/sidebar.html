@@ -1,0 +1,155 @@
+{{- $current := . -}}
+<style>
+  .sidebar-disclosure > summary .sidebar-disclosure-chevron i {
+    transition: transform 0.15s ease;
+  }
+  .sidebar-disclosure[open] > summary .sidebar-disclosure-chevron i {
+    transform: rotate(90deg);
+  }
+</style>
+<nav class="flex flex-col gap-4" aria-label="Report navigation">
+  <div class="flex flex-col gap-6">
+    <a href="{{ .Site.Home.RelPermalink }}" class="flex justify-center items-center">
+      <img
+        src="{{ "images/FCJ-logo.png" | relURL }}"
+        alt="{{ .Site.Title }}"
+        width="280"
+        height="64"
+        class="h-10 w-auto max-w-full object-contain object-left sm:h-12"
+      />
+    </a>
+
+    
+    <input
+      type="search"
+      id="sidebar-search-input"
+      name="sidebar-search"
+      autocomplete="off"
+      placeholder="Search…"
+      class="block w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-500 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+    />
+
+    <div>
+      <!-- Báo cáo thực tập/ Internship Report -->
+      <a
+        href="{{ .Site.Home.RelPermalink }}"
+        class="mb-3 block rounded px-2 py-1.5 text-sm font-semibold text-gray-900 no-underline hover:bg-gray-200 hover:text-blue-600 dark:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-blue-400"
+      >
+        {{- if eq .Site.Language.Lang "vi" -}}Báo cáo thực tập{{- else -}}Internship Report{{- end -}}
+      </a>
+      <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        Contents
+      </p>
+      <ul id="sidebar-contents-tree" class="list-none space-y-0 p-0">
+      {{- $order := .Site.Params.ordersectionsby | default "weight" -}}
+      {{- if eq $order "title" -}}
+        {{- range .Site.Home.Sections.ByTitle -}}
+          {{- partial "sidebar-node.html" (dict "sect" . "current" $current "showvisited" false) -}}
+        {{- end -}}
+      {{- else -}}
+        {{- range .Site.Home.Sections.ByWeight -}}
+          {{- partial "sidebar-node.html" (dict "sect" . "current" $current "showvisited" false) -}}
+        {{- end -}}
+      {{- end -}}
+    </ul>
+    </div>
+  </div>
+
+  {{- with .Site.Menus.shortcuts -}}
+    <div>
+      <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        Shortcuts
+      </p>
+      <ul class="list-none space-y-1 p-0">
+        {{- range sort . "Weight" -}}
+          <li>
+            <a href="{{ .URL | absLangURL }}" class="block rounded px-2 py-1.5 text-sm text-blue-700 hover:bg-gray-200 dark:text-blue-400 dark:hover:bg-gray-700">
+              {{- .Pre | safeHTML -}}
+              {{- .Name | safeHTML -}}
+              {{- .Post | safeHTML -}}
+            </a>
+          </li>
+        {{- end -}}
+      </ul>
+    </div>
+  {{- end -}}
+
+  {{- if hugo.IsMultilingual -}}
+    <div class="border-t flex flex-col gap-4 border-gray-200 pt-4 dark:border-gray-600">
+      <label for="lang-select" class="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        <i class="fas fa-language" aria-hidden="true"></i>
+        Language
+      </label>
+      <select
+        id="lang-select"
+        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+        onchange="if (this.value) location.href=this.value"
+      >
+        {{- range .Page.AllTranslations -}}
+          <option value="{{ .RelPermalink }}" {{ if eq $.Page.Lang .Lang }}selected{{ end }}>
+            {{ .Language.LanguageName }}
+          </option>
+        {{- end -}}
+      </select>
+    </div>
+  {{- end -}}
+</nav>
+<script>
+(function () {
+  var root = document.getElementById('sidebar-contents-tree');
+  var input = document.getElementById('sidebar-search-input');
+  if (!root || !input) return;
+
+  function getLiLabel(li) {
+    var direct = li.querySelector(':scope > a');
+    if (direct) return (direct.textContent || '').trim();
+    var summaryA = li.querySelector(':scope > details > summary > a');
+    return summaryA ? (summaryA.textContent || '').trim() : '';
+  }
+
+  function immediateChildLis(li) {
+    var d = li.querySelector(':scope > details');
+    if (!d) return [];
+    var ul = d.querySelector(':scope > ul');
+    if (!ul) return [];
+    return Array.prototype.filter.call(ul.children, function (el) {
+      return el.tagName === 'LI';
+    });
+  }
+
+  function walkFilter(li, q) {
+    var selfMatch = q && getLiLabel(li).toLowerCase().indexOf(q) !== -1;
+    var childHas = false;
+    immediateChildLis(li).forEach(function (child) {
+      if (walkFilter(child, q)) childHas = true;
+    });
+    var show = !q || selfMatch || childHas;
+    li.style.display = show ? '' : 'none';
+    var details = li.querySelector(':scope > details');
+    if (details && q && show && childHas) details.open = true;
+    return show;
+  }
+
+  function applyFilter() {
+    var q = (input.value || '').trim().toLowerCase();
+    var topLis = Array.prototype.filter.call(root.children, function (el) {
+      return el.tagName === 'LI';
+    });
+    if (!q) {
+      root.querySelectorAll('li').forEach(function (li) {
+        li.style.display = '';
+      });
+      return;
+    }
+    topLis.forEach(function (li) {
+      walkFilter(li, q);
+    });
+  }
+
+  var t;
+  input.addEventListener('input', function () {
+    clearTimeout(t);
+    t = setTimeout(applyFilter, 120);
+  });
+})();
+</script>

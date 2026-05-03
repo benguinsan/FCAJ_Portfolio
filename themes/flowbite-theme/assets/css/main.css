@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+/* Paths are relative to this file: themes/flowbite-theme/assets/css/main.css */
+@source "../../../../node_modules/flowbite";
+@source "../../../../layouts/**/*.html";
+@source "../../../../content/**/*.{md,html}";

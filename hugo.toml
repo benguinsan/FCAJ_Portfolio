@@ -1,0 +1,36 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+defaultContentLanguage = 'en'
+title = 'FCAJ Report'
+
+theme = ['flowbite-theme']
+
+[params]
+  ordersectionsby = 'weight'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    title = 'Internship Report'
+  [languages.vi]
+    languageName = 'Tiếng Việt'
+    weight = 2
+    title = 'Báo cáo thực tập'
+
+[[languages.en.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group"
+identifier = 'aws-study-fb'
+url = 'https://www.facebook.com/groups/awsstudygroupfcj/'
+weight = 20
+
+[[languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group"
+identifier = 'aws-study-fb'
+url = 'https://www.facebook.com/groups/awsstudygroupfcj/'
+weight = 20
