@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/FCAJ_Portfolio/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=FCAJ_Portfolio/livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Database | Internship Report</title>
 
-    <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.css">
+      <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.min.281762ddf2677a0ca553aa01c3ae8da78810c82a51f048662cd446c855305432.css" integrity="sha256-KBdi3fJnegylU6oBw66Np4gQyCpR8EhmLNRGyFUwVDI=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-      <script src="/FCAJ_Portfolio/js/main.js"></script>
+      <script src="/FCAJ_Portfolio/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -302,7 +302,7 @@
     <h2 id="424-database">4.2.4 Database</h2>
 <p>The <strong>data tier</strong> runs <strong>RDS PostgreSQL</strong> in <strong>private data subnets</strong> (one data subnet per AZ), isolated from application subnets — database traffic is not exposed on the public Internet; credentials live in <strong>Secrets Manager</strong>; an optional <strong>bastion</strong> supports operator access.</p>
 <p>You can spread <strong>RDS across multiple AZs</strong> (for example a <strong>primary</strong> and a <strong>standby / backup</strong> across <strong>private subnets</strong> as in the diagram) to improve <strong>availability (HA)</strong> and fault tolerance. In <strong>development</strong>, a <strong>single instance</strong> is common to <strong>optimize cost</strong>; production can enable <strong>Multi-AZ</strong> / standby per your operational needs.</p>
-<p><img src="/FCAJ_Portfolio/images/4-Workshop/4.2.4-database-private-rds.png" alt="RDS PostgreSQL and RDS backup in two private subnets (HA across AZs — illustrative diagram)" loading="lazy" decoding="async" /></p>
+<p><img src="/FCAJ_Portfolio/images/4-workshop/4.2.4-database-private-rds.png" alt="RDS PostgreSQL and RDS backup in two private subnets (HA across AZs — illustrative diagram)" loading="lazy" decoding="async" /></p>
 <h3 id="rds-postgresql">RDS PostgreSQL</h3>
 <p><strong>Role:</strong> Primary relational store for the <strong>NestJS</strong> / <strong>Prisma</strong> backend; instances sit in <strong>private data subnets</strong> with Postgres reachable only inside the VPC (module <strong>rds</strong>).</p>
 <p><strong>Why we chose it:</strong> PostgreSQL fits relational data and Prisma; RDS reduces undifferentiated ops (patching, backups baseline) versus self-managed Postgres on EC2.</p>

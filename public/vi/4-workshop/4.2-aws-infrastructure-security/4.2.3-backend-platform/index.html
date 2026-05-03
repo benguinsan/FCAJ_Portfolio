@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="vi" dir="ltr">
-<head><script src="/FCAJ_Portfolio/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=FCAJ_Portfolio/livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Backend và nền tảng xử lý | Báo cáo thực tập</title>
 
-    <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.css">
+      <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.min.281762ddf2677a0ca553aa01c3ae8da78810c82a51f048662cd446c855305432.css" integrity="sha256-KBdi3fJnegylU6oBw66Np4gQyCpR8EhmLNRGyFUwVDI=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-      <script src="/FCAJ_Portfolio/js/main.js"></script>
+      <script src="/FCAJ_Portfolio/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -301,7 +301,7 @@
     <h1>Backend và nền tảng xử lý</h1>
     <h2 id="423-backend-và-nền-tảng-xử-lý">4.2.3 Backend và nền tảng xử lý</h2>
 <p>Phần này trình bày <strong>đường vào API</strong> và <strong>runtime backend NestJS</strong> trong <strong>SpendWiseApp/infrastructure</strong>: Terraform gốc nằm ở <strong>environments/dev/main.tf</strong> (và <strong>environments/prod/main.tf</strong> cùng bố cục module); từng khối nằm dưới <strong>modules/</strong>.</p>
-<p><img src="/FCAJ_Portfolio/images/4-Workshop/4.2.3-spendwise-backend-vpc.png" alt="SpendWiseApp backend VPC: CloudFront → WAF (tùy chọn) → Internet Gateway → ALB; ECS Fargate trên hai AZ; RDS PostgreSQL (primary và backup); bastion và NAT tùy chọn; ECR/ECS qua PrivateLink và S3 qua gateway VPC endpoint; CloudWatch log và cảnh báo" loading="lazy" decoding="async" /></p>
+<p><img src="/FCAJ_Portfolio/images/4-workshop/4.2.3-spendwise-backend-vpc.png" alt="SpendWiseApp backend VPC: CloudFront → WAF (tùy chọn) → Internet Gateway → ALB; ECS Fargate trên hai AZ; RDS PostgreSQL (primary và backup); bastion và NAT tùy chọn; ECR/ECS qua PrivateLink và S3 qua gateway VPC endpoint; CloudWatch log và cảnh báo" loading="lazy" decoding="async" /></p>
 <p><strong>Nền tảng mạng:</strong> Module <strong>vpc</strong> và <strong>security_groups</strong> cung cấp subnet (public / private app / private data) và security group cho ALB, ECS, RDS, bastion — chi tiết trong <a href="/FCAJ_Portfolio/vi/4-workshop/4.2-aws-infrastructure-security/4.2.1-vpc-network/">4.2.1</a>.</p>
 <h3 id="application-load-balancer">Application Load Balancer</h3>
 <p><strong>Vai trò:</strong> <strong>ALB</strong> đặt trên subnet <strong>public</strong>, listener HTTP/HTTPS (HTTPS khi <strong>alb_acm_certificate_arn</strong> được cấu hình) và target group trỏ tới port container backend. Đây là điểm vào duy nhất từ Internet tới dịch vụ container.</p>

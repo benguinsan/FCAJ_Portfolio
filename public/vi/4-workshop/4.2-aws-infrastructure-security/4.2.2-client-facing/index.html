@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="vi" dir="ltr">
-<head><script src="/FCAJ_Portfolio/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=FCAJ_Portfolio/livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Frontend Hosting và xác thực người dùng | Báo cáo thực tập</title>
 
-    <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.css">
+      <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.min.281762ddf2677a0ca553aa01c3ae8da78810c82a51f048662cd446c855305432.css" integrity="sha256-KBdi3fJnegylU6oBw66Np4gQyCpR8EhmLNRGyFUwVDI=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-      <script src="/FCAJ_Portfolio/js/main.js"></script>
+      <script src="/FCAJ_Portfolio/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -301,7 +301,7 @@
     <h1>Frontend Hosting và xác thực người dùng</h1>
     <h2 id="422-frontend-hosting-và-xác-thực-người-dùng">4.2.2 Frontend Hosting và xác thực người dùng</h2>
 <p>Phần này giới thiệu <strong>AWS Amplify</strong> cho hosting frontend và <strong>Amazon Cognito</strong> cho xác thực người dùng:</p>
-<p><img src="/FCAJ_Portfolio/images/4-Workshop/4.2.2-amplify-github-cognito.png" alt="Người dùng → Amplify (front-end hosting); GitHub repo → Amplify; Amplify → Amazon Cognito" loading="lazy" decoding="async" /></p>
+<p><img src="/FCAJ_Portfolio/images/4-workshop/4.2.2-amplify-github-cognito.png" alt="Người dùng → Amplify (front-end hosting); GitHub repo → Amplify; Amplify → Amazon Cognito" loading="lazy" decoding="async" /></p>
 <h3 id="amplify">Amplify</h3>
 <p><strong>Vai trò:</strong> Build và phân phối <strong>Next.js</strong> từ repository Git; cấu hình biến môi trường build (ví dụ <strong>NEXT_PUBLIC_API_URL</strong>) để trình duyệt gọi đúng API backend. URL đó Terraform gán từ ALB: khi có <strong>alb_acm_certificate_arn</strong> thì build dùng <strong>https://</strong> và DNS ALB; không thì <strong>http://</strong> (đúng kiểu <strong>dev</strong> root module hiện tại). Khi bật <strong>enable_api_cloudfront</strong> có thể dùng URL CloudFront. Một hostname API cố định như <strong>api.example.com</strong> cần bản ghi DNS tại nhà cung cấp trỏ tới ALB hoặc CloudFront; repo này không khai báo các bản ghi đó.</p>
 <p><strong>Lý do chọn:</strong> CI/CD và HTTPS được quản lý sẵn, giảm gánh tự vận hành máy chủ web tĩnh/CDN; phù hợp monorepo khi chỉ rõ thư mục app frontend (app root). Với <strong>Next.js</strong>, việc lựa chọn mô hình <strong>S3 + CloudFront</strong> kiểu hosting tĩnh thuần thường <strong>rườm rà hơn</strong> vì framework có thể dùng <strong>SSR</strong> (render phía server).</p>

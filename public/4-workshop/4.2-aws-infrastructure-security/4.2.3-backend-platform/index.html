@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/FCAJ_Portfolio/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=FCAJ_Portfolio/livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Backend and runtime platform | Internship Report</title>
 
-    <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.css">
+      <link rel="stylesheet" href="/FCAJ_Portfolio/css/output.min.281762ddf2677a0ca553aa01c3ae8da78810c82a51f048662cd446c855305432.css" integrity="sha256-KBdi3fJnegylU6oBw66Np4gQyCpR8EhmLNRGyFUwVDI=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-      <script src="/FCAJ_Portfolio/js/main.js"></script>
+      <script src="/FCAJ_Portfolio/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -301,7 +301,7 @@
     <h1>Backend and runtime platform</h1>
     <h2 id="423-backend-and-runtime-platform">4.2.3 Backend and runtime platform</h2>
 <p>This section covers <strong>API ingress</strong> and the <strong>NestJS backend runtime</strong> in <strong>SpendWiseApp/infrastructure</strong>: root Terraform lives in <strong>environments/dev/main.tf</strong> (and <strong>environments/prod/main.tf</strong> follows the same module layout); each block is under <strong>modules/</strong>.</p>
-<p><img src="/FCAJ_Portfolio/images/4-Workshop/4.2.3-spendwise-backend-vpc.png" alt="SpendWiseApp backend VPC: CloudFront → optional WAF → Internet Gateway → ALB; ECS Fargate across two AZs; RDS PostgreSQL (primary and backup); optional bastion and NAT; ECR/ECS via PrivateLink and S3 via gateway VPC endpoint; CloudWatch logs and alarms" loading="lazy" decoding="async" /></p>
+<p><img src="/FCAJ_Portfolio/images/4-workshop/4.2.3-spendwise-backend-vpc.png" alt="SpendWiseApp backend VPC: CloudFront → optional WAF → Internet Gateway → ALB; ECS Fargate across two AZs; RDS PostgreSQL (primary and backup); optional bastion and NAT; ECR/ECS via PrivateLink and S3 via gateway VPC endpoint; CloudWatch logs and alarms" loading="lazy" decoding="async" /></p>
 <p><strong>Network foundation:</strong> The <strong>vpc</strong> and <strong>security_groups</strong> modules provide subnets (public / private app / private data) and security groups for the ALB, ECS, RDS, and bastion — details in <a href="/FCAJ_Portfolio/4-workshop/4.2-aws-infrastructure-security/4.2.1-vpc-network/">4.2.1</a>.</p>
 <h3 id="application-load-balancer">Application Load Balancer</h3>
 <p><strong>Role:</strong> The <strong>ALB</strong> sits on <strong>public</strong> subnets with HTTP/HTTPS listeners (HTTPS when <strong>alb_acm_certificate_arn</strong> is set) and a target group pointing at the backend container port. It is the sole Internet-facing entry to the container service.</p>
