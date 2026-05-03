@@ -17,13 +17,12 @@ I am very satisfied with the program (**9/10**). The curriculum was well-structu
 ## 3. Knowledge Gained
 Throughout the program, I gained in-depth knowledge of:
 
-- Core AWS services (S3, Lambda, DynamoDB, AppSync, Cognito)
-- Infrastructure as Code using Amplify Gen 2 (TypeScript CDK)
+- Core AWS services (S3, ECR, ECS, RDS, Cognito)
+- Infrastructure as Code using Terraform
 - Serverless architecture patterns with event-driven design
 - Security best practices with IAM least-privilege policies
-- Generative AI integration via Amazon Bedrock (Qwen3-VL 235B) and Amazon Transcribe
 
-This knowledge directly contributed to the NutriTrack workshop project.
+This knowledge directly contributed to the SpendWise workshop project.
 
 ## 4. Skills Improved
 Beyond technical skills, I improved several soft skills, including:

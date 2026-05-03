@@ -17,13 +17,12 @@ Tôi rất hài lòng với chương trình (**9/10**). Chương trình học đ
 ## 3. Kiến thức đạt được
 Trong suốt chương trình, tôi đã đạt được kiến thức sâu về:
 
-- Các dịch vụ cốt lõi AWS (S3, Lambda, DynamoDB, AppSync, Cognito)
-- Infrastructure as Code sử dụng Amplify Gen 2 (TypeScript CDK)
+- Các dịch vụ cốt lõi AWS (S3, ECR, ECS, RDS, Cognito)
+- Infrastructure as Code sử dụng Terraform
 - Các mẫu kiến trúc serverless với event-driven design
 - Best practices bảo mật với IAM least-privilege policies
-- Tích hợp Generative AI qua Amazon Bedrock (Qwen3-VL 235B) và Amazon Transcribe
 
-Kiến thức này đóng góp trực tiếp vào dự án workshop NutriTrack.
+Kiến thức này đóng góp trực tiếp vào dự án workshop SpendWise.
 
 ## 4. Kỹ năng cải thiện
 Ngoài kỹ năng kỹ thuật, tôi đã cải thiện các kỹ năng mềm bao gồm:
