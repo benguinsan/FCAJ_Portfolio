@@ -19,8 +19,8 @@ Nội dung được gom thành các nhóm chính để thuận tiện theo dõi:
 
 #### Nội dung
 
-[4.1 Tổng quan và kiến trúc hệ thống](4.1-system-overview-architecture/)
-[4.2 Nền tảng hạ tầng AWS và bảo mật](4.2-aws-infrastructure-security/)
-[4.3 Triển khai Terraform (theo lớp)](4.3-deployment-operations-monitoring/)
-[4.5 Chi phí, rủi ro và định hướng mở rộng](4.5-cost-risk-expansion-roadmap/)
-[4.6 Dọn dẹp tài nguyên](4.6-legacy-cleanup/)
+1. [4.1 Tổng quan và kiến trúc hệ thống](4.1-system-overview-architecture/)
+2. [4.2 Nền tảng hạ tầng AWS và bảo mật](4.2-aws-infrastructure-security/)
+3. [4.3 Triển khai Terraform (theo lớp)](4.3-deployment-operations-monitoring/)
+4. [4.5 Chi phí, rủi ro và định hướng mở rộng](4.5-cost-risk-expansion-roadmap/)
+5. [4.6 Dọn dẹp tài nguyên](4.6-legacy-cleanup/)

@@ -19,8 +19,8 @@ Content is grouped into the following main sections for easier navigation:
 
 #### Content
 
-[4.1 System overview and architecture](4.1-system-overview-architecture/)
-[4.2 AWS infrastructure and security foundation](4.2-aws-infrastructure-security/)
-[4.3 Terraform deployment (by layer)](4.3-deployment-operations-monitoring/)
-[4.5 Cost, risk, and expansion roadmap](4.5-cost-risk-expansion-roadmap/)
-[4.6 Clean up](4.6-legacy-cleanup/)
+1. [4.1 System overview and architecture](4.1-system-overview-architecture/)
+2. [4.2 AWS infrastructure and security foundation](4.2-aws-infrastructure-security/)
+3. [4.3 Terraform deployment (by layer)](4.3-deployment-operations-monitoring/)
+4. [4.5 Cost, risk, and expansion roadmap](4.5-cost-risk-expansion-roadmap/)
+5. [4.6 Clean up](4.6-legacy-cleanup/)
