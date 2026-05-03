@@ -299,70 +299,68 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Worklog Tuần 3</h1>
-    <p><strong>Thời gian thực tập (tuần 3):</strong> 23/03/2026 – 29/03/2026</p>
-<h3 id="mục-tiêu-tuần-3-theo-nội-dung-giao-tại-đơn-vị">Mục tiêu tuần 3 (theo nội dung giao tại đơn vị)</h3>
+    <h3 id="mục-tiêu-tuần-3">Mục tiêu tuần 3:</h3>
 <ul>
-<li>Dịch vụ lưu trữ <strong>S3</strong> và phân phối nội dung với <strong>CloudFront</strong>.</li>
-<li>Dịch vụ quản trị CSDL <strong>RDS</strong>.</li>
-<li>Tìm hiểu <strong>Auto Scaling Group</strong> (khả năng mở rộng và sẵn sàng).</li>
+<li>Hiểu cách hoạt động và triển khai ELB.</li>
+<li>Tìm hiểu và thực hành xây dựng Auto Scaling Group cho EC2 instance.</li>
+<li>Nắm được các thành phần cơ bản của dịch vụ giám sát CloudWatch.</li>
 </ul>
-<h3 id="kế-hoạch-công-việc-theo-ngày">Kế hoạch công việc theo ngày</h3>
+<h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
   <thead>
       <tr>
           <th>Thứ</th>
-          <th>Ngày</th>
-          <th>Nội dung công việc</th>
-          <th>Tài liệu</th>
+          <th>Công việc</th>
+          <th>Ngày bắt đầu</th>
+          <th>Ngày hoàn thành</th>
+          <th>Nguồn tài liệu</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>2</td>
+          <td>- Đọc tài liệu tổng quan ELB (ALB/NLB), kiến trúc và các thành phần chính (Listener, Target Group, Health Check).<br>- Thực hành tạo ALB cơ bản và gắn vào 2 EC2 instance để kiểm tra phân phối traffic.</td>
           <td>23/03/2026</td>
-          <td><strong>S3</strong>: bucket, object, versioning, mã hóa, bucket policy</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">S3</a></td>
+          <td>23/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>3</td>
+          <td>- Tìm hiểu Auto Scaling Group: Launch Template, min/desired/max capacity, scaling policy.<br>- Thực hành tạo ASG cho EC2 và gắn ASG vào Target Group của ALB.<br>- Kiểm tra tự động thay thế instance khi instance lỗi.</td>
           <td>24/03/2026</td>
-          <td><strong>CloudFront</strong>: distribution, origin (S3/ALB), behaviour, invalidate cache cơ bản</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">CloudFront</a></td>
+          <td>24/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>4</td>
+          <td>- Cấu hình Scaling Policy (target tracking theo CPU) cho ASG.<br>- Thực hành giả lập tải để quan sát scale out/scale in.<br>- Ghi nhận kết quả thay đổi số lượng instance theo từng ngưỡng tải.</td>
           <td>25/03/2026</td>
-          <td><strong>RDS</strong>: engine, subnet group, parameter group; tạo DB dev nhỏ</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html">RDS</a></td>
+          <td>25/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>5</td>
+          <td>- Tìm hiểu CloudWatch cơ bản: Metrics, Logs, Alarms, Dashboard.<br>- Tạo dashboard theo dõi nhanh các chỉ số của ELB và ASG.</td>
           <td>26/03/2026</td>
-          <td>Kết nối <strong>RDS</strong> từ VPC ứng dụng; backup &amp; snapshot</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html">RDS backups</a></td>
+          <td>26/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>6</td>
+          <td>- Tổng hợp kiến trúc hoàn chỉnh ELB + ASG + CloudWatch.<br>- Chạy kiểm thử end-to-end: cân bằng tải, tự động mở rộng, giám sát và cảnh báo.</td>
           <td>27/03/2026</td>
-          <td><strong>Auto Scaling Group</strong> + <strong>Launch Template</strong>: desired/min/max; health check</td>
-          <td><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html">Auto Scaling</a></td>
+          <td>27/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần</h3>
+<h3 id="kết-quả-đạt-được-tuần-3">Kết quả đạt được tuần 3:</h3>
 <ul>
-<li>
-<p>Thao tác <strong>S3</strong> ổn cho tài tĩnh và quyền truy cập theo policy.</p>
-</li>
-<li>
-<p>Thử nghiệm <strong>CloudFront</strong> phía trước origin <strong>S3</strong>.</p>
-</li>
-<li>
-<p>Triển khai <strong>RDS</strong> trong private subnet với cấu hình hợp lý và ghi lại bước kết nối.</p>
-</li>
-<li>
-<p>Hiểu vai trò <strong>ASG</strong> duy trì capacity trên nhiều AZ.</p>
-</li>
+<li>Triển khai thành công ALB với các EC2 target và kiểm tra phân phối tải.</li>
+<li>Xây dựng, cấu hình và kiểm thử Auto Scaling Group tích hợp với Target Group của ALB.</li>
+<li>Theo dõi được hành vi scale out/scale in theo chính sách target tracking CPU.</li>
+<li>Thiết lập dashboard CloudWatch và giám sát cơ bản.</li>
+<li>Hoàn tất kiểm thử end-to-end cho luồng cân bằng tải, tự động mở rộng và giám sát.</li>
 </ul>
 </article>
 

@@ -299,68 +299,83 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Week 2 Worklog</h1>
-    <p><strong>Internship period (Week 2):</strong> 16/03/2026 – 22/03/2026</p>
-<h3 id="week-2-objectives-assigned-focus">Week 2 objectives (assigned focus)</h3>
+    <h3 id="week-2-objectives">Week 2 objectives:</h3>
 <ul>
-<li>Learn and practice core <strong>AWS networking</strong>: <strong>VPC</strong>, <strong>subnets</strong>, <strong>route tables</strong>, <strong>Security Groups</strong>.</li>
-<li>Practice provisioning <strong>EC2</strong> instances and basic connectivity.</li>
+<li>Study and practise the AWS <strong>Compute</strong> family: <strong>EC2, AMI, EBS, Auto Scaling, ALB</strong>.</li>
+<li>Learn the storage family: <strong>S3</strong> and <strong>AWS Storage Gateway</strong>.</li>
+<li>Practise deploying and hosting a <strong>static website on S3</strong>.</li>
 </ul>
-<h3 id="weekly-plan-by-day">Weekly plan by day</h3>
+<h3 id="tasks-for-this-week">Tasks for this week:</h3>
 <table>
   <thead>
       <tr>
           <th>Day</th>
-          <th>Date</th>
-          <th>Activities</th>
+          <th>Tasks</th>
+          <th>Start date</th>
+          <th>Completion date</th>
           <th>Reference</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Mon</td>
+          <td>2</td>
+          <td>- Read Amazon EC2 documentation; learn instance types and cost optimisation (Spot, Reserved, Savings Plans).<br>- Practise basic EC2 provisioning.<br>- Understand durable storage with EBS.<br>- Practise backup/cloning with AMIs and snapshots.</td>
           <td>16/03/2026</td>
-          <td>VPC fundamentals: CIDR, AZs, public vs private subnets; <strong>Internet Gateway</strong></td>
-          <td><a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html">VPC</a></td>
+          <td>16/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Tue</td>
+          <td>3</td>
+          <td>- Lab: deploy Node.js on EC2.<br>- Create a VPC, configure security groups, launch EC2.<br>- Connect securely over SSH.</td>
           <td>17/03/2026</td>
-          <td><strong>Security Groups</strong> vs <strong>NACLs</strong>; lab: rules for HTTP/SSH</td>
-          <td><a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html">Security groups</a></td>
+          <td>17/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Wed</td>
+          <td>4</td>
+          <td>- Continue Node.js on EC2.<br>- Install and configure LAMP.<br>- Install Node.js on Linux and finish deploying the application.</td>
           <td>18/03/2026</td>
-          <td><strong>EC2</strong>: AMIs, instance types, key pairs, <strong>EBS</strong> volumes</td>
-          <td><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html">EC2</a></td>
+          <td>18/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Thu</td>
+          <td>5</td>
+          <td>- Learn AWS Storage Gateway and Amazon S3.<br>- Practise creating and configuring an S3 bucket and working with objects.<br>- Practise cross-region replication for HA.</td>
           <td>19/03/2026</td>
-          <td>Launch EC2 in a custom VPC; attach <strong>Elastic IP</strong> (where appropriate); <strong>SSH</strong> / <strong>SSM Session Manager</strong></td>
-          <td><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html">Connect to Linux instance</a></td>
+          <td>19/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Fri</td>
+          <td>6</td>
+          <td>- Practise static website hosting on S3.<br>- Use CloudFront.<br>- Configure CORS and OAC to protect access to the S3 bucket.<br>- Learn bucket versioning.</td>
           <td>20/03/2026</td>
-          <td>End-to-end mini lab: VPC + subnets + SG + EC2; tear-down checklist</td>
-          <td><a href="https://cloudjourney.awsstudygroup.com/">AWS Study Group — Cloud Journey</a></td>
+          <td>20/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="what-was-achieved-this-week">What was achieved this week</h3>
+<h3 id="week-2-outcomes">Week 2 outcomes:</h3>
 <ul>
 <li>
-<p>Designed a simple <strong>VPC</strong> layout with subnets and routing aligned to security best practices.</p>
+<p>Completed the hands-on path from EC2 infrastructure to deploying Node.js on AWS.</p>
 </li>
 <li>
-<p>Configured <strong>Security Groups</strong> / <strong>NACLs</strong> for controlled inbound/outbound traffic.</p>
+<p>Understood core compute building blocks: AMI, EBS, instance types, and basic scaling/load balancing.</p>
 </li>
 <li>
-<p>Launched and accessed <strong>EC2</strong> instances; practiced <strong>EBS</strong> attach/detach and basic troubleshooting.</p>
+<p>Completed S3 exercises: bucket creation, object operations, static site hosting, and basic CloudFront integration.</p>
 </li>
 <li>
-<p>Documented the lab topology for reuse in the group project and later workshops.</p>
+<p>Learned more about data protection and availability: snapshots, replication, OAC, CORS, and versioning.</p>
+</li>
+</ul>
+<h3 id="challenges-and-how-they-were-addressed">Challenges and how they were addressed:</h3>
+<ul>
+<li>
+<p><strong>Challenge:</strong> When deploying Node.js, the EC2 instance sometimes slowed or stalled during dependency installation because of limited RAM on a small instance.</p>
+</li>
+<li>
+<p><strong>Approach (as adopted):</strong> Add <strong>swap</strong> on EBS, enable it, and tune <strong>swappiness</strong> to reduce memory pressure during install/build.</p>
 </li>
 </ul>
 </article>

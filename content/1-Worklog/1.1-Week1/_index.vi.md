@@ -5,32 +5,30 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
+### Mục tiêu tuần 1:
 
-**Thời gian thực tập (tuần 1):** 09/03/2026 – 15/03/2026
+* Kết nối, làm quen với các thành viên trong First Cloud Journey.
+* Thiết lập môi trường làm việc kỹ thuật số cho nhóm 5 thành viên (zalo, github).
+* Tìm hiểu và làm quen với dịch vụ AWS cơ bản.
 
-### Mục tiêu tuần 1 (theo nội dung giao tại đơn vị)
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập <br> - Nhận phổ biến lộ trình BootCamp tại đơn vị thực tập | 9/03/2026 | 9/03/2026 | - |
+| 3 | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console và AWS CLI <br> - **Thực hành:** <br>&emsp;+ Tạo tài khoản AWS <br>&emsp;+ Cài và cấu hình AWS CLI <br>&emsp;+ Thực thi một số lệnh cơ bản | 10/03/2026 | 10/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tìm hiểu quản lý chi phí trên AWS (Billing, Cost Explorer, ngân sách, cảnh báo chi phí) <br> - Tìm hiểu các kênh hỗ trợ và gói **AWS Support** (documentation, forums, Support Center, mức gói) | 11/03/2026 | 11/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Quản lý truy cập với **AWS Identity and Access Management (IAM)** <br> - **Thực hành:** <br>&emsp;+ Tạo IAM Group và IAM Users <br>&emsp;+ Tạo IAM Role và gán quyền / liên kết với Users | 12/03/2026 | 12/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Tìm hiểu **Networking** cơ bản trên AWS (VPC, subnet, route) <br> - **Thực hành:** <br>&emsp;+ Tạo VPC <br>&emsp;+ Cấu hình tường lửa với **Security Group** và **Network ACLs** | 13/03/2026 | 13/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-* Làm quen với AWS và các dịch vụ cơ bản.
-* Tạo tài khoản AWS.
-* Đọc tài liệu và tìm hiểu quản lý chi phí với **AWS Budgets**.
-* Tìm hiểu hỗ trợ kỹ thuật với **AWS Support**.
 
-### Kế hoạch công việc theo ngày
+### Kết quả đạt được tuần 1:
 
-| Thứ | Ngày | Nội dung công việc | Tài liệu |
-| --- | --- | --- | --- |
-| 2 | 09/03/2026 | Làm quen nhóm FCJ; nội quy, an toàn thông tin, lộ trình thực tập | — |
-| 3 | 10/03/2026 | Tạo tài khoản **AWS**; làm quen **AWS Management Console**; cài và cấu hình **AWS CLI** (credentials, region mặc định) | [AWS Study Group — Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
-| 4 | 11/03/2026 | **Billing & Cost Management:** Cost Explorer; khái niệm **AWS Budgets**; theo dõi ngân sách và cảnh báo chi phí cơ bản | [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
-| 5 | 12/03/2026 | **AWS Support:** tài liệu, diễn đàn, **Support Center**; so sánh gói **Basic / Developer / Business**; thử tạo ticket (nếu được phép) | [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html) |
-| 6 | 13/03/2026 | Tổng hợp ghi chú; ôn **IAM** (user/group/role) theo hướng least-privilege cho tài khoản | [AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/) |
+* Đã kết nối, làm quen với nhóm và nội quy thực tập; nắm lộ trình BootCamp; thiết lập kênh làm việc nhóm (Zalo, GitHub) theo mục tiêu tuần.
 
-### Kết quả đạt được trong tuần
+* Đã tạo và cấu hình **AWS Free Tier account**; làm quen **AWS Management Console** và **AWS CLI** (cấu hình credential, region, thực thi lệnh cơ bản).
 
-* Đã tham gia onboarding, nắm nội quy và lộ trình tuần 1 theo hướng dẫn chuyên gia doanh nghiệp.
+* Nắm các hướng **quản lý chi phí** (theo dõi, cảnh báo) và cách **liên hệ AWS Support** / chọn kênh hỗ trợ phù hợp.
 
-* Tạo và bảo vệ tài khoản **AWS**; thao tác được trên **Console** và **CLI**.
+* Hiểu mô hình **IAM**: User, Group, Role, policy; đã **thực hành** tạo nhóm, người dùng, role và gán quyền theo nguyên tắc least privilege.
 
-* Nắm hướng theo dõi chi phí (**Cost Explorer**, **Budgets**) và kênh hỗ trợ (**AWS Support**).
-
-* Ghi chép lại bài học và hướng triển khai các tuần tiếp theo (mạng, quyền truy cập).
+* Hiểu khái niệm **VPC** và tầng bảo vệ mạng; đã **thực hành** tạo VPC và cấu hình **Security Group** cùng **Network ACLs** cho luồng truy cập phù hợp.

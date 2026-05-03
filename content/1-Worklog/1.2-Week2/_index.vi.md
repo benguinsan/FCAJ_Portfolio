@@ -5,30 +5,29 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
+### Mục tiêu tuần 2:
 
-**Thời gian thực tập (tuần 2):** 16/03/2026 – 22/03/2026
+* Đọc tài liệu và thực hành nhóm dịch vụ Compute của AWS: **EC2, AMI, EBS, Auto Scaling, ALB**.
+* Tìm hiểu nhóm dịch vụ lưu trữ: **S3** và **AWS Storage Gateway**.
+* Thực hành triển khai và hosting **website tĩnh trên S3**.
 
-### Mục tiêu tuần 2 (theo nội dung giao tại đơn vị)
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Đọc tài liệu Amazon EC2, tìm hiểu các loại instance và chiến lược tối ưu chi phí (Spot, Reserved, Savings Plans).<br>- Thực hành khởi tạo EC2 cơ bản.<br>- Hiểu lưu trữ bền vững qua EBS.<br>- Thực hành sao lưu/nhân bản bằng AMI và Snapshot. | 16/03/2026 | 16/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thực hành lab triển khai Node.js trên EC2.<br>- Tạo VPC, cấu hình Security Group, khởi tạo EC2.<br>- Kết nối an toàn qua SSH. | 17/03/2026 | 17/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Tiếp tục triển khai Node.js trên EC2.<br>- Cài đặt và cấu hình LAMP.<br>- Cài Node.js trên Linux, hoàn thiện deploy ứng dụng. | 18/03/2026 | 18/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Tìm hiểu AWS Storage Gateway và Amazon S3.<br>- Thực hành tạo và cấu hình S3 bucket, thao tác object.<br>- Thực hành Cross-Region Replication để đảm bảo HA. | 19/03/2026 | 19/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Thực hành hosting web tĩnh trên S3.<br>- Ứng dụng CloudFront.<br>- Cấu hình CORS và OAC để bảo vệ truy cập S3 bucket.<br>- Tìm hiểu Bucket Versioning. | 20/03/2026 | 20/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-* Tìm hiểu và thực hành **VPC**, thiết lập **subnet**, **route table**, **Security Group**.
-* Thực hành dựng máy chủ **EC2** trên AWS.
+### Kết quả đạt được tuần 2:
 
-### Kế hoạch công việc theo ngày
+* Hoàn thành luồng thực hành từ dựng hạ tầng EC2 đến triển khai Node.js lên trên hạ tầng AWS Cloud
+* Nắm được các thành phần Compute cốt lõi: AMI, EBS, instance types và kiến thức cơ bản về scaling/load balancing.
+* Hoàn thành thực hành S3: tạo bucket, thao tác object, hosting website tĩnh và tích hợp CloudFront cơ bản.
+* Hiểu thêm về bảo vệ dữ liệu và tính sẵn sàng: Snapshot, replication, OAC, CORS và versioning.
 
-| Thứ | Ngày | Nội dung công việc | Tài liệu |
-| --- | --- | --- | --- |
-| 2 | 16/03/2026 | VPC: CIDR, AZ, subnet public/private; **Internet Gateway** | [VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) |
-| 3 | 17/03/2026 | **Security Group** và **NACL**; lab quy tắc HTTP/SSH | [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) |
-| 4 | 18/03/2026 | **EC2**: AMI, instance type, key pair, volume **EBS** | [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) |
-| 5 | 19/03/2026 | Khởi chạy EC2 trong VPC tùy chỉnh; **Elastic IP**; **SSH** / **SSM Session Manager** | [Kết nối instance Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html) |
-| 6 | 20/03/2026 | Lab tổng hợp: VPC + subnet + SG + EC2; checklist dọn tài nguyên | [AWS Study Group — Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+### Khó khăn gặp phải và hướng xử lý:
 
-### Kết quả đạt được trong tuần
-
-* Thiết kế được **VPC** đơn giản kèm subnet và routing phù hợp thực hành.
-
-* Cấu hình **Security Group** / **NACL** để kiểm soát traffic vào/ra.
-
-* Khởi tạo và truy cập **EC2**; thực hành gắn **EBS** và xử lý lỗi cơ bản.
-
-* Ghi lại sơ đồ lab để tái sử dụng cho đồ án nhóm và các workshop sau.
+* **Khó khăn:** Khi deploy Node.js, EC2 có lúc bị chậm/treo trong bước cài dependency do RAM hạn chế trên instance nhỏ.
+* **Ý tưởng/Hướng xử lý (giữ nguyên):** Bổ sung **swap** trên EBS, kích hoạt và tinh chỉnh swappiness để giảm áp lực bộ nhớ trong lúc install/build.

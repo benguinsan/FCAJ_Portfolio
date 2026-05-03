@@ -299,69 +299,72 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Worklog Tuần 2</h1>
-    <p><strong>Thời gian thực tập (tuần 2):</strong> 16/03/2026 – 22/03/2026</p>
-<h3 id="mục-tiêu-tuần-2-theo-nội-dung-giao-tại-đơn-vị">Mục tiêu tuần 2 (theo nội dung giao tại đơn vị)</h3>
+    <h3 id="mục-tiêu-tuần-2">Mục tiêu tuần 2:</h3>
 <ul>
-<li>Tìm hiểu và thực hành <strong>VPC</strong>, thiết lập <strong>subnet</strong>, <strong>route table</strong>, <strong>Security Group</strong>.</li>
-<li>Thực hành dựng máy chủ <strong>EC2</strong> trên AWS.</li>
+<li>Đọc tài liệu và thực hành nhóm dịch vụ Compute của AWS: <strong>EC2, AMI, EBS, Auto Scaling, ALB</strong>.</li>
+<li>Tìm hiểu nhóm dịch vụ lưu trữ: <strong>S3</strong> và <strong>AWS Storage Gateway</strong>.</li>
+<li>Thực hành triển khai và hosting <strong>website tĩnh trên S3</strong>.</li>
 </ul>
-<h3 id="kế-hoạch-công-việc-theo-ngày">Kế hoạch công việc theo ngày</h3>
+<h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
   <thead>
       <tr>
           <th>Thứ</th>
-          <th>Ngày</th>
-          <th>Nội dung công việc</th>
-          <th>Tài liệu</th>
+          <th>Công việc</th>
+          <th>Ngày bắt đầu</th>
+          <th>Ngày hoàn thành</th>
+          <th>Nguồn tài liệu</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>2</td>
+          <td>- Đọc tài liệu Amazon EC2, tìm hiểu các loại instance và chiến lược tối ưu chi phí (Spot, Reserved, Savings Plans).<br>- Thực hành khởi tạo EC2 cơ bản.<br>- Hiểu lưu trữ bền vững qua EBS.<br>- Thực hành sao lưu/nhân bản bằng AMI và Snapshot.</td>
           <td>16/03/2026</td>
-          <td>VPC: CIDR, AZ, subnet public/private; <strong>Internet Gateway</strong></td>
-          <td><a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html">VPC</a></td>
+          <td>16/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>3</td>
+          <td>- Thực hành lab triển khai Node.js trên EC2.<br>- Tạo VPC, cấu hình Security Group, khởi tạo EC2.<br>- Kết nối an toàn qua SSH.</td>
           <td>17/03/2026</td>
-          <td><strong>Security Group</strong> và <strong>NACL</strong>; lab quy tắc HTTP/SSH</td>
-          <td><a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html">Security groups</a></td>
+          <td>17/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>4</td>
+          <td>- Tiếp tục triển khai Node.js trên EC2.<br>- Cài đặt và cấu hình LAMP.<br>- Cài Node.js trên Linux, hoàn thiện deploy ứng dụng.</td>
           <td>18/03/2026</td>
-          <td><strong>EC2</strong>: AMI, instance type, key pair, volume <strong>EBS</strong></td>
-          <td><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html">EC2</a></td>
+          <td>18/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>5</td>
+          <td>- Tìm hiểu AWS Storage Gateway và Amazon S3.<br>- Thực hành tạo và cấu hình S3 bucket, thao tác object.<br>- Thực hành Cross-Region Replication để đảm bảo HA.</td>
           <td>19/03/2026</td>
-          <td>Khởi chạy EC2 trong VPC tùy chỉnh; <strong>Elastic IP</strong>; <strong>SSH</strong> / <strong>SSM Session Manager</strong></td>
-          <td><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html">Kết nối instance Linux</a></td>
+          <td>19/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>6</td>
+          <td>- Thực hành hosting web tĩnh trên S3.<br>- Ứng dụng CloudFront.<br>- Cấu hình CORS và OAC để bảo vệ truy cập S3 bucket.<br>- Tìm hiểu Bucket Versioning.</td>
           <td>20/03/2026</td>
-          <td>Lab tổng hợp: VPC + subnet + SG + EC2; checklist dọn tài nguyên</td>
-          <td><a href="https://cloudjourney.awsstudygroup.com/">AWS Study Group — Cloud Journey</a></td>
+          <td>20/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần</h3>
+<h3 id="kết-quả-đạt-được-tuần-2">Kết quả đạt được tuần 2:</h3>
 <ul>
-<li>
-<p>Thiết kế được <strong>VPC</strong> đơn giản kèm subnet và routing phù hợp thực hành.</p>
-</li>
-<li>
-<p>Cấu hình <strong>Security Group</strong> / <strong>NACL</strong> để kiểm soát traffic vào/ra.</p>
-</li>
-<li>
-<p>Khởi tạo và truy cập <strong>EC2</strong>; thực hành gắn <strong>EBS</strong> và xử lý lỗi cơ bản.</p>
-</li>
-<li>
-<p>Ghi lại sơ đồ lab để tái sử dụng cho đồ án nhóm và các workshop sau.</p>
-</li>
+<li>Hoàn thành luồng thực hành từ dựng hạ tầng EC2 đến triển khai Node.js lên trên hạ tầng AWS Cloud</li>
+<li>Nắm được các thành phần Compute cốt lõi: AMI, EBS, instance types và kiến thức cơ bản về scaling/load balancing.</li>
+<li>Hoàn thành thực hành S3: tạo bucket, thao tác object, hosting website tĩnh và tích hợp CloudFront cơ bản.</li>
+<li>Hiểu thêm về bảo vệ dữ liệu và tính sẵn sàng: Snapshot, replication, OAC, CORS và versioning.</li>
+</ul>
+<h3 id="khó-khăn-gặp-phải-và-hướng-xử-lý">Khó khăn gặp phải và hướng xử lý:</h3>
+<ul>
+<li><strong>Khó khăn:</strong> Khi deploy Node.js, EC2 có lúc bị chậm/treo trong bước cài dependency do RAM hạn chế trên instance nhỏ.</li>
+<li><strong>Ý tưởng/Hướng xử lý (giữ nguyên):</strong> Bổ sung <strong>swap</strong> trên EBS, kích hoạt và tinh chỉnh swappiness để giảm áp lực bộ nhớ trong lúc install/build.</li>
 </ul>
 </article>
 

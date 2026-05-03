@@ -299,69 +299,77 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Week 4 Worklog</h1>
-    <p><strong>Internship period (Week 4):</strong> 30/03/2026 – 05/04/2026</p>
-<h3 id="week-4-objectives-assigned-focus">Week 4 objectives (assigned focus)</h3>
+    <h3 id="week-4-objectives">Week 4 objectives:</h3>
 <ul>
-<li><strong>CloudWatch</strong> for monitoring and observability (metrics, logs, alarms).</li>
-<li>First steps with <strong>IaC</strong> using <strong>AWS CloudFormation</strong>.</li>
-<li>Build a first <strong>serverless</strong> function with <strong>AWS Lambda</strong>.</li>
+<li>Learn and practise deploying <strong>Amazon RDS</strong> (SQL model).</li>
+<li>Get started with <strong>IaC on AWS using CloudFormation</strong> (lab-based exercises).</li>
+<li><strong>Define the project topic</strong> and <strong>select AWS services</strong> suited to the application.</li>
 </ul>
-<h3 id="weekly-plan-by-day">Weekly plan by day</h3>
+<h3 id="tasks-for-this-week">Tasks for this week:</h3>
 <table>
   <thead>
       <tr>
           <th>Day</th>
-          <th>Date</th>
-          <th>Activities</th>
+          <th>Tasks</th>
+          <th>Start date</th>
+          <th>Completion date</th>
           <th>Reference</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Mon</td>
+          <td>2</td>
+          <td>- Read the Amazon RDS for MySQL overview: architecture, instance class, storage, and security groups.<br>- Practise creating RDS MySQL per the course lab.<br>- Launch EC2 in the appropriate VPC/subnet to prepare for RDS connectivity.</td>
           <td>30/03/2026</td>
-          <td><strong>CloudWatch</strong> metrics &amp; dashboards; <strong>Logs</strong> groups/retention; <strong>Alarms</strong> + <strong>SNS</strong> notifications</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html">CloudWatch</a></td>
+          <td>30/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Tue</td>
+          <td>3</td>
+          <td>- Configure connectivity from EC2 to RDS (security group inbound/outbound, endpoint, port 3306).<br>- Verify database connectivity from EC2 using a MySQL client.<br>- Create sample schema/tables for CRUD testing.</td>
           <td>31/03/2026</td>
-          <td><strong>CloudFormation</strong>: template structure (<code>Resources</code>, <code>Parameters</code>, <code>Outputs</code>); deploy a small stack</td>
-          <td><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html">CloudFormation</a></td>
+          <td>31/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Wed</td>
+          <td>4</td>
+          <td>- Install Node.js on EC2 and configure environment variables for RDS.<br>- Deploy a Node.js CRUD app connected to RDS MySQL.<br>- Exercise Create/Read/Update/Delete flows and record results.</td>
           <td>01/04/2026</td>
-          <td>Stack updates &amp; drift awareness; clean delete stack</td>
-          <td><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-drift-detection-stack.html">Drift detection</a></td>
+          <td>01/04/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Thu</td>
+          <td>5</td>
+          <td>- Learn CloudFormation following the course lab step by step.<br>- Deploy the stack per lab instructions.<br>- Watch the <strong>Events</strong> tab and troubleshoot using the lab guide.</td>
           <td>02/04/2026</td>
-          <td><strong>Lambda</strong> console: handler, runtime, execution role; test invoke</td>
-          <td><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">Lambda</a></td>
+          <td>02/04/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Fri</td>
+          <td>6</td>
+          <td>- Define the project topic: <strong>personal expense management app</strong> (scope, users, main data flows).<br>- Choose an initial AWS service set (frontend/hosting, API, database, auth, file storage, monitoring) balancing <strong>realism</strong> and <strong>cost optimisation</strong>.</td>
           <td>03/04/2026</td>
-          <td>Lambda with environment variables; optional trigger (e.g. <strong>API Gateway</strong> HTTP API) read-through</td>
-          <td><a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html">Lambda triggers</a></td>
+          <td>03/04/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="what-was-achieved-this-week">What was achieved this week</h3>
+<h3 id="week-4-outcomes">Week 4 outcomes:</h3>
 <ul>
 <li>
-<p>Set up basic <strong>observability</strong> with metrics, log groups, and actionable <strong>alarms</strong>.</p>
+<p>Deployed <strong>RDS MySQL</strong> per the lab and launched suitable <strong>EC2</strong> for database connectivity.</p>
 </li>
 <li>
-<p>Deployed and updated a <strong>CloudFormation</strong> stack, respecting idempotent practices.</p>
+<p>Completed <strong>EC2 → RDS</strong> connectivity checks and prepared <strong>sample schema/tables</strong> for CRUD tests.</p>
 </li>
 <li>
-<p>Shipped a first <strong>Lambda</strong> function with a clear execution role and tested invocations.</p>
+<p>Ran a <strong>Node.js CRUD</strong> app on EC2 against RDS and verified basic <strong>Create/Read/Update/Delete</strong> operations.</p>
 </li>
 <li>
-<p>Captured templates and runbooks for reuse in the SpendWise / workshop track.</p>
+<p>Practised <strong>CloudFormation</strong> per the lab, monitored <strong>Events</strong>, and fixed issues using the guide.</p>
+</li>
+<li>
+<p>Clarified the <strong>project topic</strong> and an initial <strong>AWS service</strong> set, balancing realism and cost.</p>
 </li>
 </ul>
 </article>

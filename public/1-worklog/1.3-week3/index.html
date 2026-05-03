@@ -299,69 +299,77 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Week 3 Worklog</h1>
-    <p><strong>Internship period (Week 3):</strong> 23/03/2026 – 29/03/2026</p>
-<h3 id="week-3-objectives-assigned-focus">Week 3 objectives (assigned focus)</h3>
+    <h3 id="week-3-objectives">Week 3 objectives:</h3>
 <ul>
-<li><strong>S3</strong> storage patterns and static content delivery with <strong>CloudFront</strong>.</li>
-<li><strong>RDS</strong> fundamentals for managed relational databases.</li>
-<li>Introduction to <strong>Auto Scaling Groups</strong> (capacity and availability).</li>
+<li>Understand how <strong>Elastic Load Balancing (ELB)</strong> works and how to deploy it.</li>
+<li>Learn and practise building an <strong>Auto Scaling Group</strong> for EC2 instances.</li>
+<li>Learn the basics of <strong>Amazon CloudWatch</strong> for monitoring.</li>
 </ul>
-<h3 id="weekly-plan-by-day">Weekly plan by day</h3>
+<h3 id="tasks-for-this-week">Tasks for this week:</h3>
 <table>
   <thead>
       <tr>
           <th>Day</th>
-          <th>Date</th>
-          <th>Activities</th>
+          <th>Tasks</th>
+          <th>Start date</th>
+          <th>Completion date</th>
           <th>Reference</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Mon</td>
+          <td>2</td>
+          <td>- Read ELB overview (ALB/NLB), architecture, and key components (listener, target group, health checks).<br>- Practise creating a basic ALB attached to two EC2 instances to verify traffic distribution.</td>
           <td>23/03/2026</td>
-          <td><strong>S3</strong> buckets, objects, versioning, encryption options, bucket policies</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">S3</a></td>
+          <td>23/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Tue</td>
+          <td>3</td>
+          <td>- Learn Auto Scaling groups: launch template, min/desired/max capacity, scaling policies.<br>- Practise creating an ASG for EC2 and attaching it to the ALB target group.<br>- Verify automatic instance replacement when an instance fails.</td>
           <td>24/03/2026</td>
-          <td><strong>CloudFront</strong> distributions: origins (S3/ALB), behaviours, cache invalidation basics</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">CloudFront</a></td>
+          <td>24/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Wed</td>
+          <td>4</td>
+          <td>- Configure a CPU <strong>target tracking</strong> scaling policy for the ASG.<br>- Simulate load to observe scale-out and scale-in.<br>- Record how instance counts change at different load levels.</td>
           <td>25/03/2026</td>
-          <td><strong>RDS</strong> engines, subnet groups, parameter groups; create a small dev database</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html">RDS</a></td>
+          <td>25/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Thu</td>
+          <td>5</td>
+          <td>- Learn CloudWatch basics: metrics, logs, alarms, dashboards.<br>- Build a quick dashboard for ELB and ASG metrics.</td>
           <td>26/03/2026</td>
-          <td><strong>RDS</strong> connectivity from app VPC; backups &amp; snapshots overview</td>
-          <td><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html">RDS backups</a></td>
+          <td>26/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
-          <td>Fri</td>
+          <td>6</td>
+          <td>- Consolidate the full <strong>ELB + ASG + CloudWatch</strong> architecture.<br>- Run an end-to-end test: load balancing, autoscaling, monitoring, and alarms.</td>
           <td>27/03/2026</td>
-          <td><strong>Auto Scaling Groups</strong> + <strong>Launch Template</strong>: desired/min/max; health checks</td>
-          <td><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html">Auto Scaling</a></td>
+          <td>27/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="what-was-achieved-this-week">What was achieved this week</h3>
+<h3 id="week-3-outcomes">Week 3 outcomes:</h3>
 <ul>
 <li>
-<p>Built confidence with <strong>S3</strong> for static assets and policy-driven access.</p>
+<p>Deployed an ALB with EC2 targets and verified load distribution.</p>
 </li>
 <li>
-<p>Sketched and tested a <strong>CloudFront</strong> distribution in front of an <strong>S3</strong> origin.</p>
+<p>Built, configured, and tested an ASG integrated with the ALB target group.</p>
 </li>
 <li>
-<p>Provisioned <strong>RDS</strong> in private subnets with sensible defaults and documented connection steps.</p>
+<p>Observed scale-out/scale-in behaviour under a CPU target tracking policy.</p>
 </li>
 <li>
-<p>Understood how <strong>ASG</strong> maintains capacity across AZs for resilient web tiers.</p>
+<p>Set up a CloudWatch dashboard and basic monitoring.</p>
+</li>
+<li>
+<p>Completed end-to-end testing for load balancing, autoscaling, and monitoring.</p>
 </li>
 </ul>
 </article>

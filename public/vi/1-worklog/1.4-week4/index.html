@@ -299,70 +299,68 @@
         
   <article class="article-body max-w-4xl [&_blockquote]:border-l-4 [&_blockquote]:border-gray-300 [&_blockquote]:ps-4 [&_code]:rounded [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 dark:[&_code]:bg-gray-800 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:max-w-full [&_li]:my-1 [&_ol]:my-3 [&_ol]:list-decimal [&_ol]:ps-6 [&_p]:my-3 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:ps-6 [&_a]:text-blue-600 [&_a]:underline dark:[&_a]:text-blue-400 [&_table]:my-4 [&_table]:w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-300 [&_table]:text-sm [&_th]:border [&_th]:border-gray-300 [&_th]:bg-gray-900 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:font-semibold [&_th]:text-white [&_td]:border [&_td]:border-gray-300 [&_td]:px-3 [&_td]:py-2">
     <h1>Worklog Tuần 4</h1>
-    <p><strong>Thời gian thực tập (tuần 4):</strong> 30/03/2026 – 05/04/2026</p>
-<h3 id="mục-tiêu-tuần-4-theo-nội-dung-giao-tại-đơn-vị">Mục tiêu tuần 4 (theo nội dung giao tại đơn vị)</h3>
+    <h3 id="mục-tiêu-tuần-4">Mục tiêu tuần 4:</h3>
 <ul>
-<li><strong>CloudWatch</strong> — monitoring và observability (metric, log, alarm).</li>
-<li>Làm quen <strong>IaC</strong> qua <strong>AWS CloudFormation</strong>.</li>
-<li>Xây dựng hàm <strong>serverless</strong> với <strong>AWS Lambda</strong>.</li>
+<li>Tìm hiểu và thực hành triển khai dịch vụ <strong>Amazon RDS</strong> (mô hình SQL).</li>
+<li>Bước đầu làm quen <strong>IaC trên AWS với CloudFormation</strong> (thực hành theo lab tài liệu).</li>
+<li><strong>Xác định đề tài dự án</strong> và <strong>lựa chọn các dịch vụ AWS</strong> phù hợp cho ứng dụng.</li>
 </ul>
-<h3 id="kế-hoạch-công-việc-theo-ngày">Kế hoạch công việc theo ngày</h3>
+<h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
   <thead>
       <tr>
           <th>Thứ</th>
-          <th>Ngày</th>
-          <th>Nội dung công việc</th>
-          <th>Tài liệu</th>
+          <th>Công việc</th>
+          <th>Ngày bắt đầu</th>
+          <th>Ngày hoàn thành</th>
+          <th>Nguồn tài liệu</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>2</td>
+          <td>- Đọc tài liệu tổng quan Amazon RDS for MySQL (mô hình SQL): kiến trúc, instance class, storage, và security group.<br>- Thực hành tạo RDS MySQL theo lab trên tài liệu.<br>- Khởi tạo EC2 trong cùng VPC/subnet phù hợp để chuẩn bị kết nối vào RDS.</td>
           <td>30/03/2026</td>
-          <td><strong>CloudWatch</strong> metric &amp; dashboard; <strong>Logs</strong>; <strong>Alarm</strong> + <strong>SNS</strong></td>
-          <td><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html">CloudWatch</a></td>
+          <td>30/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>3</td>
+          <td>- Cấu hình kết nối từ EC2 tới RDS (security group inbound/outbound, endpoint, port 3306).<br>- Kiểm tra kết nối database từ EC2 bằng MySQL client.<br>- Khởi tạo schema/table mẫu phục vụ test CRUD.</td>
           <td>31/03/2026</td>
-          <td><strong>CloudFormation</strong>: template (<code>Resources</code>, <code>Parameters</code>, <code>Outputs</code>); deploy stack nhỏ</td>
-          <td><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html">CloudFormation</a></td>
+          <td>31/03/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>4</td>
+          <td>- Cài đặt môi trường Node.js trên EC2 và cấu hình biến môi trường kết nối RDS.<br>- Triển khai ứng dụng Node.js CRUD kết nối tới RDS MySQL.<br>- Chạy thử các chức năng Create/Read/Update/Delete và ghi nhận kết quả.</td>
           <td>01/04/2026</td>
-          <td>Cập nhật stack; nhận biết drift; xóa stack gọn</td>
-          <td><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-drift-detection-stack.html">Drift</a></td>
+          <td>01/04/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>5</td>
+          <td>- Làm quen CloudFormation theo đúng lab trong tài liệu (thực hành bám sát hướng dẫn).<br>- Triển khai stack theo từng bước trong lab.<br>- Theo dõi tab Events, xử lý lỗi theo phần troubleshooting của tài liệu.</td>
           <td>02/04/2026</td>
-          <td><strong>Lambda</strong>: handler, runtime, execution role; test invoke</td>
-          <td><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">Lambda</a></td>
+          <td>02/04/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>6</td>
+          <td>- Xác định đề tài dự án: <strong>ứng dụng quản lý chi tiêu cá nhân</strong> (phạm vi chức năng, đối tượng người dùng, luồng dữ liệu chính).<br>- Lựa chọn bộ dịch vụ AWS phù hợp (frontend/hosting, API, database, auth, lưu trữ file, giám sát) theo tiêu chí <strong>gần thực tế</strong> nhưng <strong>tối ưu chi phí</strong>.</td>
           <td>03/04/2026</td>
-          <td>Biến môi trường Lambda; đọc/ghi nhận trigger (ví dụ <strong>API Gateway</strong> HTTP API)</td>
-          <td><a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html">Lambda triggers</a></td>
+          <td>03/04/2026</td>
+          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
-<h3 id="kết-quả-đạt-được-trong-tuần">Kết quả đạt được trong tuần</h3>
+<h3 id="kết-quả-đạt-được-tuần-4">Kết quả đạt được tuần 4:</h3>
 <ul>
-<li>
-<p>Thiết lập <strong>quan sát</strong> cơ bản: metric, log group, <strong>alarm</strong> có hành động.</p>
-</li>
-<li>
-<p>Triển khai và cập nhật stack <strong>CloudFormation</strong> theo hướng idempotent.</p>
-</li>
-<li>
-<p>Hoàn thành hàm <strong>Lambda</strong> đầu tiên với role rõ ràng và kiểm thử invoke.</p>
-</li>
-<li>
-<p>Lưu template/runbook phục vụ chuỗi SpendWise / workshop.</p>
-</li>
+<li>Triển khai được <strong>RDS MySQL</strong> theo lab và khởi tạo <strong>EC2</strong> phù hợp để chuẩn bị kết nối database.</li>
+<li>Hoàn tất kiểm tra <strong>kết nối EC2 → RDS</strong> và chuẩn bị <strong>schema/table mẫu</strong> cho thử nghiệm CRUD.</li>
+<li>Chạy được <strong>ứng dụng Node.js CRUD</strong> trên EC2 kết nối RDS và xác nhận các thao tác <strong>Create/Read/Update/Delete</strong> cơ bản.</li>
+<li>Thực hành <strong>CloudFormation</strong> đúng theo lab tài liệu, theo dõi <strong>Events</strong> và xử lý lỗi theo hướng dẫn.</li>
+<li>Xác định rõ <strong>đề tài dự án</strong> và <strong>bộ dịch vụ AWS</strong> ban đầu, cân bằng giữa tính thực tế và tối ưu chi phí.</li>
 </ul>
 </article>
 

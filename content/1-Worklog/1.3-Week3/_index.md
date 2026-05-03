@@ -5,31 +5,30 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
+### Week 3 objectives:
 
-**Internship period (Week 3):** 23/03/2026 – 29/03/2026
+* Understand how **Elastic Load Balancing (ELB)** works and how to deploy it.
+* Learn and practise building an **Auto Scaling Group** for EC2 instances.
+* Learn the basics of **Amazon CloudWatch** for monitoring.
 
-### Week 3 objectives (assigned focus)
+### Tasks for this week:
 
-* **S3** storage patterns and static content delivery with **CloudFront**.
-* **RDS** fundamentals for managed relational databases.
-* Introduction to **Auto Scaling Groups** (capacity and availability).
+| Day | Tasks | Start date | Completion date | Reference |
+| --- | --- | --- | --- | --- |
+| 2 | - Read ELB overview (ALB/NLB), architecture, and key components (listener, target group, health checks).<br>- Practise creating a basic ALB attached to two EC2 instances to verify traffic distribution. | 23/03/2026 | 23/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Learn Auto Scaling groups: launch template, min/desired/max capacity, scaling policies.<br>- Practise creating an ASG for EC2 and attaching it to the ALB target group.<br>- Verify automatic instance replacement when an instance fails. | 24/03/2026 | 24/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Configure a CPU **target tracking** scaling policy for the ASG.<br>- Simulate load to observe scale-out and scale-in.<br>- Record how instance counts change at different load levels. | 25/03/2026 | 25/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Learn CloudWatch basics: metrics, logs, alarms, dashboards.<br>- Build a quick dashboard for ELB and ASG metrics. | 26/03/2026 | 26/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Consolidate the full **ELB + ASG + CloudWatch** architecture.<br>- Run an end-to-end test: load balancing, autoscaling, monitoring, and alarms. | 27/03/2026 | 27/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-### Weekly plan by day
+### Week 3 outcomes:
 
-| Day | Date | Activities | Reference |
-| --- | --- | --- | --- |
-| Mon | 23/03/2026 | **S3** buckets, objects, versioning, encryption options, bucket policies | [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) |
-| Tue | 24/03/2026 | **CloudFront** distributions: origins (S3/ALB), behaviours, cache invalidation basics | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
-| Wed | 25/03/2026 | **RDS** engines, subnet groups, parameter groups; create a small dev database | [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) |
-| Thu | 26/03/2026 | **RDS** connectivity from app VPC; backups & snapshots overview | [RDS backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html) |
-| Fri | 27/03/2026 | **Auto Scaling Groups** + **Launch Template**: desired/min/max; health checks | [Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html) |
+* Deployed an ALB with EC2 targets and verified load distribution.
 
-### What was achieved this week
+* Built, configured, and tested an ASG integrated with the ALB target group.
 
-* Built confidence with **S3** for static assets and policy-driven access.
+* Observed scale-out/scale-in behaviour under a CPU target tracking policy.
 
-* Sketched and tested a **CloudFront** distribution in front of an **S3** origin.
+* Set up a CloudWatch dashboard and basic monitoring.
 
-* Provisioned **RDS** in private subnets with sensible defaults and documented connection steps.
-
-* Understood how **ASG** maintains capacity across AZs for resilient web tiers.
+* Completed end-to-end testing for load balancing, autoscaling, and monitoring.

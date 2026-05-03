@@ -5,30 +5,34 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
+### Week 2 objectives:
 
-**Internship period (Week 2):** 16/03/2026 – 22/03/2026
+* Study and practise the AWS **Compute** family: **EC2, AMI, EBS, Auto Scaling, ALB**.
+* Learn the storage family: **S3** and **AWS Storage Gateway**.
+* Practise deploying and hosting a **static website on S3**.
 
-### Week 2 objectives (assigned focus)
+### Tasks for this week:
 
-* Learn and practice core **AWS networking**: **VPC**, **subnets**, **route tables**, **Security Groups**.
-* Practice provisioning **EC2** instances and basic connectivity.
+| Day | Tasks | Start date | Completion date | Reference |
+| --- | --- | --- | --- | --- |
+| 2 | - Read Amazon EC2 documentation; learn instance types and cost optimisation (Spot, Reserved, Savings Plans).<br>- Practise basic EC2 provisioning.<br>- Understand durable storage with EBS.<br>- Practise backup/cloning with AMIs and snapshots. | 16/03/2026 | 16/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Lab: deploy Node.js on EC2.<br>- Create a VPC, configure security groups, launch EC2.<br>- Connect securely over SSH. | 17/03/2026 | 17/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Continue Node.js on EC2.<br>- Install and configure LAMP.<br>- Install Node.js on Linux and finish deploying the application. | 18/03/2026 | 18/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Learn AWS Storage Gateway and Amazon S3.<br>- Practise creating and configuring an S3 bucket and working with objects.<br>- Practise cross-region replication for HA. | 19/03/2026 | 19/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Practise static website hosting on S3.<br>- Use CloudFront.<br>- Configure CORS and OAC to protect access to the S3 bucket.<br>- Learn bucket versioning. | 20/03/2026 | 20/03/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-### Weekly plan by day
+### Week 2 outcomes:
 
-| Day | Date | Activities | Reference |
-| --- | --- | --- | --- |
-| Mon | 16/03/2026 | VPC fundamentals: CIDR, AZs, public vs private subnets; **Internet Gateway** | [VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) |
-| Tue | 17/03/2026 | **Security Groups** vs **NACLs**; lab: rules for HTTP/SSH | [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) |
-| Wed | 18/03/2026 | **EC2**: AMIs, instance types, key pairs, **EBS** volumes | [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) |
-| Thu | 19/03/2026 | Launch EC2 in a custom VPC; attach **Elastic IP** (where appropriate); **SSH** / **SSM Session Manager** | [Connect to Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html) |
-| Fri | 20/03/2026 | End-to-end mini lab: VPC + subnets + SG + EC2; tear-down checklist | [AWS Study Group — Cloud Journey](https://cloudjourney.awsstudygroup.com/) |
+* Completed the hands-on path from EC2 infrastructure to deploying Node.js on AWS.
 
-### What was achieved this week
+* Understood core compute building blocks: AMI, EBS, instance types, and basic scaling/load balancing.
 
-* Designed a simple **VPC** layout with subnets and routing aligned to security best practices.
+* Completed S3 exercises: bucket creation, object operations, static site hosting, and basic CloudFront integration.
 
-* Configured **Security Groups** / **NACLs** for controlled inbound/outbound traffic.
+* Learned more about data protection and availability: snapshots, replication, OAC, CORS, and versioning.
 
-* Launched and accessed **EC2** instances; practiced **EBS** attach/detach and basic troubleshooting.
+### Challenges and how they were addressed:
 
-* Documented the lab topology for reuse in the group project and later workshops.
+* **Challenge:** When deploying Node.js, the EC2 instance sometimes slowed or stalled during dependency installation because of limited RAM on a small instance.
+
+* **Approach (as adopted):** Add **swap** on EBS, enable it, and tune **swappiness** to reduce memory pressure during install/build.
