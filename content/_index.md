@@ -7,7 +7,7 @@ chapter: false
 
 <div class="mx-auto flex w-full max-w-4xl flex-col gap-8">
 
-<h1 class="!mt-0 !text-red-600">Internship Report</h1>
+<h1 class="!mt-0 !text-blue-600">Internship Report</h1>
 
 <div class="flex w-full flex-col gap-6 md:flex-row md:items-start md:gap-8">
 <div class="flex min-w-0 flex-1 flex-col gap-2">
@@ -19,7 +19,7 @@ chapter: false
 <p class="!mb-0">&emsp; <strong>Major:</strong> Information Technology</p>
 <p class="!mb-0">&emsp; <strong>Internship Company:</strong> Amazon Web Services Vietnam</p>
 <p class="!mb-0">&emsp; <strong>Internship Position:</strong> FCAJ Cloud Intern</p>
-<p class="!mb-0">&emsp; <strong>Internship Duration:</strong> From 09/03/2026 to 02/05/2026</p>
+<p class="!mb-0">&emsp; <strong>Internship Duration:</strong> From 09/03/2026 to 03/05/2026</p>
 </div>
 <div class="flex shrink-0 flex-col items-center justify-center md:items-end md:justify-start md:pt-1">
 {{< relurlimg "/images/avatar.png" "Nguyen Thanh Phuc — internship at AWS Vietnam" "!m-0 h-auto max-h-80 w-auto max-w-[min(100%,280px)] rounded-lg object-contain shadow-md" "770" "1024" >}}
