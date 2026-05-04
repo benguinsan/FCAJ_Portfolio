@@ -20,6 +20,12 @@ Sau khi bấm vào ứng dụng, màn hình **Overview** hiển thị nhánh **m
 
 ![Amplify — Overview, nhánh main](/images/4-workshop/amplify-console-overview-main-branch.png)
 
+Sau khi deploy nhánh **main** thành công, có thể mở ứng dụng qua **domain mặc định** mà Amplify gán cho branch (thường có dạng **main.…amplifyapp.com**; URL đầy đủ hiển thị trên trang branch trong Amplify Console).
+
+![SpendWise — trang landing trên Amplify sau khi deploy](/images/4-workshop/spendwise-amplify-landing.png)
+
+Nếu giao diện hiển thị như trên thì **hosting frontend** (Amplify) đã thành công. Để ứng dụng hoạt động đầy đủ trong luồng workshop, hãy chuyển sang **[4.3.3 Triển khai backend](../4.3.3-backend/)** (đẩy image lên ECR, rollout ECS, migrate cơ sở dữ liệu).
+
 ### Đặc tả build: amplify.yml
 
 Amplify Hosting không tự suy ra bố cục monorepo. **Đặc tả build** ở **thư mục gốc repository** — file **amplify.yml** trong [SpendWiseApp](https://github.com/benguinsan/spendwise) — cho Amplify biết thư mục ứng dụng Next.js, cách cài dependency, lệnh build và thư mục artifact để publish.

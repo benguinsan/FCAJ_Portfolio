@@ -20,6 +20,12 @@ After you open the app, the **Overview** page shows the **main** branch; open th
 
 ![Amplify — Overview, main branch](/images/4-workshop/amplify-console-overview-main-branch.png)
 
+After the **main** branch build succeeds, open the app from the **default Amplify domain** for that branch (typically **main.…amplifyapp.com**; the full URL appears on the branch page in the Amplify console).
+
+![SpendWise — landing page on Amplify after deploy](/images/4-workshop/spendwise-amplify-landing.png)
+
+If the UI looks like the screenshot above, **frontend hosting** on Amplify is working. For the full workshop flow, continue to **[4.3.3 Deploy backend](../4.3.3-backend/)** (push the image to ECR, roll ECS, run database migrations).
+
 ### Build specification: amplify.yml
 
 Amplify Hosting does not guess your monorepo layout. The **build spec** at the **repository root** — file **amplify.yml** in [SpendWiseApp](https://github.com/benguinsan/spendwise) — tells Amplify which folder is the Next.js app and how to install dependencies, build, and which directory to publish.
