@@ -24,7 +24,7 @@ After the **main** branch build succeeds, open the app from the **default Amplif
 
 ![SpendWise — landing page on Amplify after deploy](/images/4-workshop/spendwise-amplify-landing.png)
 
-If the UI looks like the screenshot above, **frontend hosting** on Amplify is working. For the full workshop flow, continue to **[4.3.3 Deploy backend](../4.3.3-backend/)** (push the image to ECR, roll ECS, run database migrations).
+If the landing page renders as above, **frontend hosting** on Amplify is serving the build. The **amplify.yml** and Amplify/CloudFront notes below cover the build spec; backend deployment (ECR, ECS, migrations) and the **sign-up / Cognito confirm** walkthrough are in **[4.3.3 Deploy backend](../4.3.3-backend/)**.
 
 ### Build specification: amplify.yml
 

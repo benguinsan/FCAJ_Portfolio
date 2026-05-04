@@ -24,7 +24,7 @@ Sau khi deploy nhánh **main** thành công, có thể mở ứng dụng qua **d
 
 ![SpendWise — trang landing trên Amplify sau khi deploy](/images/4-workshop/spendwise-amplify-landing.png)
 
-Nếu giao diện hiển thị như trên thì **hosting frontend** (Amplify) đã thành công. Để ứng dụng hoạt động đầy đủ trong luồng workshop, hãy chuyển sang **[4.3.3 Triển khai backend](../4.3.3-backend/)** (đẩy image lên ECR, rollout ECS, migrate cơ sở dữ liệu).
+Nếu giao diện landing hiển thị như trên thì **hosting frontend** (Amplify) đã phục vụ được bản build. Phần **amplify.yml** và CloudFront/Amplify nằm dưới đây; triển khai backend (ECR, ECS, migrate) và **thử đăng ký / xác nhận Cognito** được mô tả tại **[4.3.3 Triển khai backend](../4.3.3-backend/)**.
 
 ### Đặc tả build: amplify.yml
 
