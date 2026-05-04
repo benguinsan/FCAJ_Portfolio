@@ -25,7 +25,7 @@ Internship period (Week 8): 27/04/2026 – 02/05/2026
 | 4 | - Terraform: stand up CloudFront (distribution, origin, basic caching behavior, TLS certificate if using HTTPS).<br>- Validate headers/cookies the app needs behind the CDN. | 29/04/2026 | 29/04/2026 | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
 | 5 | - Attach AWS WAF to the ALB or to CloudFront (per architecture); configure a minimal managed/custom rule set; enable WAF logging if needed for the demo.<br>- Test allowed vs blocked requests. | 30/04/2026 | 30/04/2026 | [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html) |
 | 6 | - Complete end-to-end deployment: ALB, ECS, RDS, CloudFront, WAF, Cognito, and other existing components; ship a stable build to the agreed environment.<br>- Review health checks, key alarms, and deployment README. | 01/05/2026 | 01/05/2026 | [Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) |
-| 7 | - Write the internship report (worklog, architecture, outcomes, lessons learned); rehearse the demo.<br>- Clean-up / handover: credentials, resource tags, and a checklist to delete or keep environments per mentor guidance. | 02/05/2026 | 02/05/2026 | - |
+| 7 | - Write the internship report (worklog, architecture, outcomes, lessons learned).<br>- Clean-up. | 02/05/2026 | 02/05/2026 | - |
 
 ### Week 8 outcomes:
 

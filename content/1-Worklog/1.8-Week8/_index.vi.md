@@ -25,7 +25,7 @@ Thời gian thực tập (tuần 8): 27/04/2026 – 02/05/2026
 | 4 | - Terraform: phân phối CloudFront (distribution, origin, hành vi cache cơ bản, certificate nếu HTTPS).<br>- Kiểm tra header / cookie cần thiết cho ứng dụng sau CDN. | 29/04/2026 | 29/04/2026 | [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) |
 | 5 | - Gắn AWS WAF với ALB hoặc với CloudFront (theo kiến trúc); cấu hình tập rule mặc định / custom tối thiểu; bật logging WAF nếu cần demo.<br>- Kiểm thử request hợp lệ / bị chặn. | 30/04/2026 | 30/04/2026 | [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html) |
 | 6 | - Hoàn thiện triển khai end-to-end: ALB, ECS, RDS, CloudFront, WAF, Cognito và các thành phần đã có; deploy bản ổn định lên môi trường thống nhất.<br>- Rà health check, alarm chính, README triển khai. | 01/05/2026 | 01/05/2026 | [Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) |
-| 7 | - Soạn báo cáo thực tập (worklog, kiến trúc, kết quả, rút kinh nghiệm); diễn tập demo.<br>- Dọn dẹp / bàn giao: credential, tag tài nguyên, checklist xóa hoặc giữ môi trường theo mentor. | 02/05/2026 | 02/05/2026 | - |
+| 7 | - Soạn báo cáo thực tập (worklog, kiến trúc, kết quả, rút kinh nghiệm)<br>- Dọn dẹp | 02/05/2026 | 02/05/2026 | - |
 
 ### Kết quả đạt được tuần 8:
 
