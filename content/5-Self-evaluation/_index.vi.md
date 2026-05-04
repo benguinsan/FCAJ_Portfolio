@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **AWS/First Cloud Journey Program** từ **09/03/2026** đến **03/05/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
+Trong suốt thời gian thực tập tại **AWS/First Cloud Journey Program** từ **09/03/2026** đến **02/05/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
 
 Tôi đã tham gia vào việc học tập các dịch vụ của AWS, cũng như áp dụng các kiến thức đã được học vào dự án nhóm. Qua đó, tôi cải thiện kỹ năng làm việc nhóm, phân bổ công việc cho các thành viên trong nhóm, và đặc biệt đạt được các kỹ năng mong muốn như Docker, DevOps, cùng khả năng áp dụng các dịch vụ AWS hỗ trợ công việc lập trình.
 

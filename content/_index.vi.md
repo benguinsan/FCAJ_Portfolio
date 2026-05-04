@@ -19,7 +19,7 @@ chapter: false
 <p class="!mb-0">&emsp; <strong>Ngành:</strong> Công Nghệ Thông Tin</p>
 <p class="!mb-0">&emsp; <strong>Công ty thực tập:</strong> Amazon Web Services Vietnam</p>
 <p class="!mb-0">&emsp; <strong>Vị trí thực tập:</strong> FCAJ Cloud Intern</p>
-<p class="!mb-0">&emsp; <strong>Thời gian thực tập:</strong> Từ 09/03/2026 đến 03/05/2026</p>
+<p class="!mb-0">&emsp; <strong>Thời gian thực tập:</strong> Từ 09/03/2026 đến 02/05/2026</p>
 </div>
 <div class="flex shrink-0 flex-col items-center justify-center md:items-end md:justify-start md:pt-1">
 {{< relurlimg "/images/avatar.png" "Nguyễn Thanh Phúc — thực tập tại AWS Vietnam" "!m-0 h-auto max-h-80 w-auto max-w-[min(100%,280px)] rounded-lg object-contain shadow-md" "770" "1024" >}}

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-During my internship at **AWS/First Cloud Journey Program** from **09/03/2026** to **03/05/2026**, I had the opportunity to learn, practice, and apply the knowledge gained at university in a real working environment.
+During my internship at **AWS/First Cloud Journey Program** from **09/03/2026** to **02/05/2026**, I had the opportunity to learn, practice, and apply the knowledge gained at university in a real working environment.
 
 I participated in learning AWS services and applying that knowledge to a group project. Through this, I improved my teamwork skills, task allocation within the team, and especially achieved targeted skills such as Docker, DevOps, and practical use of AWS services to support software development.
 
